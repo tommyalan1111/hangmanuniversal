@@ -1,0 +1,16 @@
+﻿{
+  "name": "hangman-universal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hangman Universal - game doan tu, 12 chu de, khong build step.",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "test": "node tools/test-core.mjs",
+    "validate": "node tools/validate.mjs",
+    "check": "node tools/validate.mjs && node tools/test-core.mjs",
+    "smoke": "node tools/smoke.mjs",
+    "import": "node tools/import.mjs",
+    "generate": "node tools/generate.mjs",
+    "shots": "node tools/shoot.mjs"
+  }
+}

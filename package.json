@@ -1,16 +1,26 @@
-﻿{
+{
   "name": "hangman-universal",
   "version": "1.0.0",
   "private": true,
   "description": "Hangman Universal - game doan tu, 12 chu de, khong build step.",
   "scripts": {
     "start": "node tools/serve.mjs",
+    "dev": "node tools/serve.mjs",
     "test": "node tools/test-core.mjs",
     "validate": "node tools/validate.mjs",
     "check": "node tools/validate.mjs && node tools/test-core.mjs",
     "smoke": "node tools/smoke.mjs",
+    "shots": "node tools/shoot.mjs",
     "import": "node tools/import.mjs",
     "generate": "node tools/generate.mjs",
-    "shots": "node tools/shoot.mjs"
+    "build:web": "node tools/build-web.mjs",
+    "android:sync": "node tools/build-web.mjs && cap sync android",
+    "apk": "node tools/build-apk.mjs",
+    "apk:release": "node tools/build-apk.mjs --release"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.6.10",
+    "@capacitor/cli": "^7.6.10",
+    "@capacitor/core": "^7.6.10"
   }
 }

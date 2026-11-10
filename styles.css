@@ -88,7 +88,7 @@ button:focus-visible {
   width: min(460px, 100%);
   min-height: 100dvh;
   margin: 0 auto;
-  padding: 16px 18px calc(18px + env(safe-area-inset-bottom));
+  padding: calc(16px + env(safe-area-inset-top, 0px)) 18px calc(18px + env(safe-area-inset-bottom, 0px));
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -780,7 +780,7 @@ button:focus-visible {
   position: relative;
   z-index: 1;
   width: min(460px, 100%);
-  padding: 22px 20px calc(22px + env(safe-area-inset-bottom));
+  padding: 22px 20px calc(18px + env(safe-area-inset-bottom, 0px));
   border-radius: 26px 26px 0 0;
   background: linear-gradient(180deg, #131b32, #0a1020);
   border: 1px solid rgba(255, 255, 255, 0.12);

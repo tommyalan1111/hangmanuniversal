@@ -1,0 +1,13 @@
+{
+  "appId": "com.hangmanuniversal.game",
+  "appName": "Hangman Universal",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#070b16"
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}

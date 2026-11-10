@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Hangman Universal</string>
+    <string name="title_activity_main">Hangman Universal</string>
+    <string name="package_name">com.hangmanuniversal.game</string>
+    <string name="custom_url_scheme">com.hangmanuniversal.game</string>
+</resources>

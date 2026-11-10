@@ -204,6 +204,70 @@ Nếu cần ngân hàng lớn hơn:
 - sinh nháp bằng LLM rồi tự kiểm tra lại từng câu
 - tham khảo dữ liệu mở: Wiktionary, Wikidata, danh sách từ theo tần suất
 
+## Môi trường dev & build APK
+
+Dự án chạy được ở 3 tầng: web thuần (không cần gì), dev server (điện thoại cùng Wi-Fi),
+và app Android đóng gói bằng Capacitor.
+
+### Chuẩn bị một lần
+
+| Thành phần | Đang dùng | Ghi chú |
+| --- | --- | --- |
+| Node | 20+ | đã có |
+| JDK 21 | `.tools/jdk21/jdk-21.0.13+9` | Capacitor 7 + Gradle 8.11 **không chạy trên JDK 25** |
+| Android SDK | `%LOCALAPPDATA%\Android\Sdk` | cần platform 35, build-tools 36 |
+| Android SDK env | `ANDROID_HOME` | build script đọc biến này |
+
+Tải JDK 21 nếu chưa có:
+
+```powershell
+mkdir .tools
+curl.exe -L -o .tools/jdk21.zip "https://api.adoptium.net/v3/binary/latest/21/ga/windows/x64/jdk/hotspot/normal/eclipse"
+mkdir .tools/jdk21
+tar.exe -xf .tools/jdk21.zip -C .tools/jdk21
+```
+
+### Lệnh
+
+```bash
+npm run dev            # web dev server tại http://localhost:5173 (mở được trên điện thoại)
+npm run build:web      # copy phần runtime vào www/ (chỉ 6 file, ~500 KB)
+npm run android:sync   # build:web + cap sync android
+npm run apk            # build:web + sync + gradle assembleDebug -> dist/*.apk
+npm run apk:release    # assembleRelease (chưa ký, cần keystore)
+```
+
+`npm run apk` tự tìm JDK 21 trong `.tools/`, in ra phiên bản JDK/SDK đang dùng,
+rồi copy APK sang `dist/hangman-universal-debug.apk`.
+
+### Cài lên máy/emulator
+
+```bash
+adb install -r dist/hangman-universal-debug.apk
+adb shell am start -n com.hangmanuniversal.game/.MainActivity
+```
+
+Debug APK ký bằng debug keystore, chỉ để test — không upload Play Store được.
+
+### Live reload trên điện thoại (tuỳ chọn)
+
+Thêm vào `capacitor.config.json`:
+
+```json
+"server": { "url": "http://192.168.x.x:5173", "cleartext": true }
+```
+
+Rồi `npm run dev` + `npm run android:sync`. Sửa CSS/JS trên máy tính là điện thoại
+cập nhật ngay, không phải build lại. **Nhớ xoá `server.url` trước khi build APK.**
+
+### Bản release (khi cần)
+
+```bash
+keytool -genkey -v -keystore hangman.keystore -alias hangman -keyalg RSA -keysize 2048 -validity 10000
+```
+
+Khai báo `signingConfigs` trong `android/app/build.gradle` rồi chạy `npm run apk:release`.
+
 ## Bước tiếp theo (chưa làm)
 
 - Toàn bộ UI đang là tiếng Anh (khớp với ngân hàng câu hỏi). Nếu sau này cần
@@ -219,6 +283,7 @@ Nếu cần ngân hàng lớn hơn:
 npm start        # server tĩnh
 npm run import -- examples/sample-import.csv   # nhập câu hỏi từ CSV/JSON
 npm run generate     # sinh lại toàn bộ ngân hàng từ Wikidata
+npm run apk          # build APK Android (debug)
 npm run check    # validate + test (nhanh, không cần Chrome)
 npm run smoke    # chơi thật 1 ván + kiểm tra lưu tiến độ (cần Chrome)
 npm run shots    # chụp lại .shots/

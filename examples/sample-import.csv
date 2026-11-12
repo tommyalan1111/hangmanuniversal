@@ -1,144 +1,100 @@
 category,question,answer,difficulty
-nature,An animal you would see in a zoo,TIGER,1
-nature,An animal you would see in a zoo,LION,1
-nature,An animal you would see in a zoo,ELEPHANT,1
-nature,An animal you would see in a zoo,GIRAFFE,1
-nature,An animal you would see in a zoo,ZEBRA,1
-nature,An animal you would see in a zoo,BEAR,1
-nature,An animal you would see in a zoo,PANDA,1
-nature,An animal you would see in a zoo,MONKEY,1
-nature,An animal you would see in a zoo,GORILLA,2
-nature,An animal you would see in a zoo,CHIMPANZEE,3
-nature,An animal you would see in a zoo,ORANGUTAN,3
-nature,An animal you would see in a zoo,KANGAROO,2
-nature,An animal you would see in a zoo,KOALA,2
-nature,An animal you would see in a zoo,PENGUIN,2
-nature,An animal you would see in a zoo,RHINO,1
-nature,An animal you would see in a zoo,RHINOCEROS,3
-nature,An animal you would see in a zoo,HIPPO,1
-nature,An animal you would see in a zoo,HIPPOPOTAMUS,3
-nature,An animal you would see in a zoo,CHEETAH,2
-nature,An animal you would see in a zoo,LEOPARD,2
-nature,An animal you would see in a zoo,CROCODILE,3
-nature,An animal you would see in a zoo,ALLIGATOR,3
-nature,An animal you would see in a zoo,SNAKE,1
-nature,An animal you would see in a zoo,TURTLE,1
-nature,An animal you would see in a zoo,TORTOISE,3
-nature,An animal you would see in a zoo,FLAMINGO,2
-nature,An animal you would see in a zoo,OSTRICH,2
-nature,An animal you would see in a zoo,PEACOCK,2
-nature,An animal you would see in a zoo,CAMEL,1
-nature,An animal you would see in a zoo,LLAMA,2
-nature,An animal you would see in a zoo,ALPACA,2
-nature,An animal you would see in a zoo,SLOTH,2
-nature,An animal you would see in a zoo,WOLF,1
-nature,An animal you would see in a zoo,FOX,1
-nature,An animal you would see in a zoo,MEERKAT,2
-nature,An animal you would see in a zoo,LEMUR,2
-nature,An animal you would see in a zoo,IGUANA,3
-nature,An animal you would see in a zoo,POLAR BEAR,2
-nature,An animal you would see in a zoo,BROWN BEAR,2
-nature,An animal you would see in a zoo,RED PANDA,2
-nature,An animal you would see in a zoo,TAPIR,3
-nature,An animal you would see in a zoo,CAPYBARA,3
-nature,An animal you would see in a zoo,WALRUS,2
-nature,An animal you would see in a zoo,SEAL,1
-nature,An animal you would see in a zoo,SEA LION,2
-nature,An animal you would see in a zoo,OTTER,2
-nature,An animal you would see in a zoo,EAGLE,2
-nature,An animal you would see in a zoo,OWL,1
-nature,An animal you would see in a zoo,PARROT,1
-nature,An animal you would see in a zoo,TOUCAN,3
-nature,An animal you would see in a zoo,MACAW,3
-nature,An animal you would see in a zoo,BAT,1
-geo,Most visited country,FRANCE,1
-geo,Most visited country,SPAIN,1
-geo,Most visited country,UNITED STATES,2
-geo,Most visited country,USA,1
-geo,Most visited country,CHINA,1
-geo,Most visited country,ITALY,1
-geo,Most visited country,TURKEY,2
-geo,Most visited country,MEXICO,1
-geo,Most visited country,THAILAND,2
-geo,Most visited country,GERMANY,1
-geo,Most visited country,UNITED KINGDOM,3
-geo,Most visited country,JAPAN,1
-geo,Most visited country,AUSTRIA,2
-geo,Most visited country,GREECE,1
-geo,Most visited country,MALAYSIA,2
-geo,Most visited country,PORTUGAL,2
-geo,Most visited country,RUSSIA,2
-geo,Most visited country,CANADA,1
-geo,Most visited country,POLAND,2
-geo,Most visited country,NETHERLANDS,3
-geo,Most visited country,SAUDI ARABIA,3
-geo,Most visited country,CROATIA,2
-geo,Most visited country,UAE,1
-geo,Most visited country,INDIA,1
-geo,Most visited country,SINGAPORE,2
-geo,Most visited country,SOUTH KOREA,2
-geo,Most visited country,VIETNAM,1
-geo,Most visited country,INDONESIA,2
-geo,Most visited country,MOROCCO,3
-geo,Most visited country,SWITZERLAND,3
-geo,Most visited country,EGYPT,2
-geo,Most visited country,IRELAND,2
-geo,Most visited country,SOUTH AFRICA,3
-geo,Most visited country,AUSTRALIA,2
-geo,Most visited country,BELGIUM,2
-geo,Most visited country,SWEDEN,2
-geo,Most visited country,DENMARK,2
-geo,Most visited country,NORWAY,2
-geo,Most visited country,FINLAND,2
-geo,Most visited country,BRAZIL,2
-geo,Most visited country,ARGENTINA,2
-geo,Most visited country,COLOMBIA,3
-geo,Most visited country,PERU,2
-geo,Most visited city,BANGKOK,2
-geo,Most visited city,PARIS,1
-geo,Most visited city,LONDON,1
-geo,Most visited city,DUBAI,1
-geo,Most visited city,SINGAPORE,2
-geo,Most visited city,KUALA LUMPUR,3
-geo,Most visited city,NEW YORK,1
-geo,Most visited city,ISTANBUL,2
-geo,Most visited city,TOKYO,1
-geo,Most visited city,ANTALYA,3
-geo,Most visited city,SEOUL,2
-geo,Most visited city,OSAKA,2
-geo,Most visited city,MECCA,3
-geo,Most visited city,PHUKET,3
-geo,Most visited city,PATTAYA,3
-geo,Most visited city,MILAN,2
-geo,Most visited city,BARCELONA,2
-geo,Most visited city,HONG KONG,2
-geo,Most visited city,MACAU,3
-geo,Most visited city,ROME,1
-geo,Most visited city,TAIPEI,2
-geo,Most visited city,PRAGUE,2
-geo,Most visited city,AMSTERDAM,2
-geo,Most visited city,MIAMI,2
-geo,Most visited city,LOS ANGELES,2
-geo,Most visited city,LAS VEGAS,2
-geo,Most visited city,VIENNA,2
-geo,Most visited city,BERLIN,2
-geo,Most visited city,MADRID,2
-geo,Most visited city,VENICE,2
-geo,Most visited city,FLORENCE,3
-geo,Most visited city,DUBLIN,2
-geo,Most visited city,SYDNEY,2
-geo,Most visited city,MELBOURNE,2
-geo,Most visited city,TORONTO,2
-geo,Most visited city,SAN FRANCISCO,3
-geo,Most visited city,CHICAGO,2
-geo,Most visited city,BEIJING,2
-geo,Most visited city,SHANGHAI,2
-geo,Most visited city,DELHI,2
-geo,Most visited city,MUMBAI,2
-geo,Most visited city,KYOTO,2
-geo,Most visited city,MUNICH,2
-geo,Most visited city,ATHENS,2
-geo,Most visited city,CAIRO,2
-geo,Most visited city,RIO DE JANEIRO,3
-geo,Most visited city,BUENOS AIRES,3
-geo,Most visited city,CAPE TOWN,2
+tech,A well known electric vehicle,TESLA MODEL S,1
+tech,A well known electric vehicle,TESLA MODEL X,1
+tech,A well known electric vehicle,TESLA MODEL Y,1
+tech,A well known electric vehicle,TESLA CYBERTRUCK,3
+tech,A well known electric vehicle,NISSAN LEAF,1
+tech,A well known electric vehicle,CHEVROLET BOLT,2
+tech,A well known electric vehicle,MUSTANG MACH E,2
+tech,A well known electric vehicle,PORSCHE TAYCAN,3
+tech,A well known electric vehicle,AUDI E TRON,2
+tech,A well known electric vehicle,HYUNDAI IONIQ,2
+tech,A well known electric vehicle,LUCID AIR,3
+tech,A well known electric vehicle,POLESTAR,3
+tech,A well known electric vehicle,RIVIAN R ONE T,3
+tech,A well known electric vehicle,JAGUAR I PACE,3
+tech,A well known electric vehicle,VINFAST VF EIGHT,2
+tech,A well known electric vehicle,VINFAST VF NINE,2
+tech,A well known electric vehicle,TESLA ROADSTER,2
+tech,A well known electric vehicle,FISKER OCEAN,3
+tech,A well known electric vehicle,KIA EV SIX,2
+tech,A well known electric vehicle,BMW I THREE,2
+tech,A well known electric vehicle,BMW I FOUR,2
+tech,A well known electric vehicle,RENAULT ZOE,3
+tech,A well known electric vehicle,HONDA E,3
+tech,A well known electric vehicle,MINI ELECTRIC,2
+sports,A well known football club,MAN UNITED,1
+sports,A well known football club,MANCHESTER CITY,1
+sports,A well known football club,REAL MADRID,1
+sports,A well known football club,BARCELONA,1
+sports,A well known football club,BAYERN MUNICH,1
+sports,A well known football club,LIVERPOOL,1
+sports,A well known football club,CHELSEA,1
+sports,A well known football club,ARSENAL,1
+sports,A well known football club,JUVENTUS,1
+sports,A well known football club,AC MILAN,1
+sports,A well known football club,INTER MILAN,2
+sports,A well known football club,PSG,1
+sports,A well known football club,TOTTENHAM,2
+sports,A well known football club,HOTSPUR,3
+sports,A well known football club,ATLETICO MADRID,2
+sports,A well known football club,DORTMUND,2
+sports,A well known football club,NAPOLI,2
+sports,A well known football club,AS ROMA,2
+sports,A well known football club,LAZIO,3
+sports,A well known football club,SEVILLA,2
+sports,A well known football club,VALENCIA,2
+sports,A well known football club,BENFICA,2
+sports,A well known football club,PORTO,2
+sports,A well known football club,SPORTING LISBON,3
+sports,A well known football club,AJAX,2
+sports,A well known football club,PSV EINDHOVEN,3
+sports,A well known football club,FEYENOORD,3
+sports,A well known football club,CELTIC,3
+sports,A well known football club,RANGERS,3
+sports,A well known football club,GALATASARAY,3
+sports,A well known football club,FENERBAHCE,3
+sports,A well known football club,BESIKTAS,3
+sports,A well known football club,BOCA JUNIORS,3
+sports,A well known football club,RIVER PLATE,3
+sports,A well known football club,FLAMENGO,3
+sports,A well known football club,ASTON VILLA,2
+sports,A well known football club,NEWCASTLE,2
+sports,A famous football player,LIONEL MESSI,1
+sports,A famous football player,C RONALDO,1
+sports,A famous football player,PELE,1
+sports,A famous football player,MARADONA,1
+sports,A famous football player,ZIDANE,1
+sports,A famous football player,RONALDINHO,1
+sports,A famous football player,NEYMAR,1
+sports,A famous football player,MBAPPE,1
+sports,A famous football player,HAALAND,1
+sports,A famous football player,LEWANDOWSKI,2
+sports,A famous football player,DE BRUYNE,2
+sports,A famous football player,SALAH,1
+sports,A famous football player,KANE,1
+sports,A famous football player,BENZEMA,2
+sports,A famous football player,MODRIC,2
+sports,A famous football player,INIESTA,2
+sports,A famous football player,XAVI,2
+sports,A famous football player,RONALDO NAZARIO,3
+sports,A famous football player,THIERRY HENRY,2
+sports,A famous football player,DAVID BECKHAM,1
+sports,A famous football player,GERRARD,2
+sports,A famous football player,LAMPARD,2
+sports,A famous football player,WAYNE ROONEY,2
+sports,A famous football player,IBRAHIMOVIC,2
+sports,A famous football player,SERGIO RAMOS,2
+sports,A famous football player,PUYOL,3
+sports,A famous football player,MALDINI,3
+sports,A famous football player,BAGGIO,3
+sports,A famous football player,TOTTI,3
+sports,A famous football player,DEL PIERO,3
+sports,A famous football player,PIRLO,3
+sports,A famous football player,BUFFON,2
+sports,A famous football player,NEUER,2
+sports,A famous football player,KROOS,2
+sports,A famous football player,VINICIUS JUNIOR,2
+sports,A famous football player,BELLINGHAM,2
+sports,A famous football player,SON HEUNG MIN,2
+sports,A famous football player,AGUERO,2

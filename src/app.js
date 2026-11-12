@@ -177,46 +177,164 @@
   }
 
   var TILE_GAP = 6;
+  var TILE_GAP_TIGHT = 4;
   var TILE_SPACE_RATIO = 0.36;
+  var MAX_TILE = 52;
+  var MIN_TILE = 18;
+  var ONE_ROW_MIN = 22;
+  var MAX_ROWS = 3;
 
-  /** Fits one row when possible; only very long answers wrap to a second line. */
-  function tileSize(letters, spaces, slots, containerWidth) {
-    var width = containerWidth || 324;
-    var gaps = TILE_GAP * Math.max(0, slots - 1);
-    var units = letters + TILE_SPACE_RATIO * spaces;
-    var size = Math.floor((width - gaps) / Math.max(units, 1));
-    if (size > 52) size = 52;
-    if (size < 22) size = 22;
-    return size;
+  function totalUnits(tokens) {
+    var units = 0;
+    tokens.forEach(function (t) { units += t.isSpace ? TILE_SPACE_RATIO : 1; });
+    return units;
+  }
+
+  function wordWidth(letters, tile, gap) {
+    return letters * tile + Math.max(0, letters - 1) * gap;
+  }
+
+  /**
+   * Wraps by whole words. A word is only broken between letters when it cannot
+   * fit on a line by itself (a 25 letter answer, for example).
+   */
+  function wrapRows(tokens, tile, gap, width) {
+    var spaceToken = { isSpace: true, char: ' ', revealed: false };
+
+    var words = [];
+    var word = [];
+    tokens.forEach(function (token) {
+      if (token.isSpace) {
+        if (word.length) { words.push(word); word = []; }
+        return;
+      }
+      word.push(token);
+    });
+    if (word.length) words.push(word);
+
+    var rows = [];
+    var row = [];
+    var used = 0;
+
+    function startRow() {
+      if (row.length) rows.push(row);
+      row = [];
+      used = 0;
+    }
+
+    function addChunk(chunk) {
+      if (!chunk.length) return;
+      var extra = row.length ? gap + tile * TILE_SPACE_RATIO : 0;
+      var chunkWidth = wordWidth(chunk.length, tile, gap);
+      if (row.length && used + extra + chunkWidth > width) startRow();
+      if (row.length) { row.push(spaceToken); used += gap + tile * TILE_SPACE_RATIO; }
+      chunk.forEach(function (token) { row.push(token); });
+      used += chunkWidth;
+    }
+
+    words.forEach(function (letters) {
+      var whole = wordWidth(letters.length, tile, gap);
+      if (whole <= width) { addChunk(letters); return; }
+
+      var chunk = [];
+      var chunkUsed = 0;
+      letters.forEach(function (token) {
+        var extra = chunk.length ? gap : 0;
+        if (chunk.length && chunkUsed + extra + tile > width) {
+          addChunk(chunk);
+          chunk = [];
+          chunkUsed = 0;
+          extra = 0;
+        }
+        chunk.push(token);
+        chunkUsed += extra + tile;
+      });
+      if (chunk.length) addChunk(chunk);
+    });
+
+    if (row.length) rows.push(row);
+    return rows;
+  }
+
+  /**
+   * Short answers stay on one line. Long ones wrap at the largest tile that
+   * fits in MAX_ROWS rows, so headings stay readable and words stay intact.
+   */
+  /**
+   * Short answers stay on one line. Longer ones wrap at the largest tile that
+   * fits the row budget: 2 rows up to 20 letters, 3 rows beyond that.
+   */
+  /**
+   * Short answers stay on one line. Longer ones wrap at the largest tile that
+   * fits the row budget, and a row count is only accepted once the letters are
+   * still comfortable to read (>= 26px tiles).
+   */
+  function layoutSlots(tokens, width) {
+    var COMFORT_TILE = 26;
+    var letters = tokens.filter(function (t) { return !t.isSpace; }).length;
+
+    var singleTile = Math.floor(
+      (width - TILE_GAP * Math.max(0, tokens.length - 1)) / Math.max(totalUnits(tokens), 1)
+    );
+    singleTile = Math.min(MAX_TILE, singleTile);
+    if (singleTile >= ONE_ROW_MIN) {
+      return { parts: [tokens], tile: singleTile, gap: TILE_GAP };
+    }
+
+    var maxRows = letters <= 20 ? 2 : MAX_ROWS;
+    var best = null;
+
+    for (var rows = 2; rows <= maxRows; rows++) {
+      var gaps = [TILE_GAP, TILE_GAP_TIGHT];
+      for (var g = 0; g < gaps.length; g++) {
+        for (var tile = MAX_TILE; tile >= MIN_TILE; tile--) {
+          var plan = wrapRows(tokens, tile, gaps[g], width);
+          if (plan.length > rows) continue;
+
+          if (!best || tile > best.tile) best = { parts: plan, tile: tile, gap: gaps[g] };
+          if (tile >= COMFORT_TILE) return best;
+          break;
+        }
+      }
+    }
+
+    if (best) return best;
+    var fallback = wrapRows(tokens, MIN_TILE, TILE_GAP_TIGHT, width);
+    return { parts: fallback.length ? fallback : [tokens], tile: MIN_TILE, gap: TILE_GAP_TIGHT };
   }
 
   function renderSlots(newLetters) {
     var el = $('play-slots');
     var tokens = C.mask(session.question.answer, session.guessed);
-    var letters = tokens.filter(function (t) { return !t.isSpace && t.char !== ' '; }).length;
-    var spaces = tokens.length - letters;
+    var width = el.clientWidth || 324;
+    var plan = layoutSlots(tokens, width);
 
-    el.style.setProperty(
-      '--tile',
-      tileSize(letters, spaces, tokens.length, el.clientWidth || 324) + 'px'
-    );
+    el.style.setProperty('--tile', plan.tile + 'px');
+    el.style.setProperty('--slot-gap', plan.gap + 'px');
     el.innerHTML = '';
 
-    tokens.forEach(function (token) {
-      if (token.isSpace) {
-        var gap = document.createElement('span');
-        gap.className = 'gap';
-        el.appendChild(gap);
-        return;
-      }
-      var slot = document.createElement('span');
-      slot.className = 'slot';
-      if (token.revealed) {
-        slot.classList.add('revealed');
-        if (newLetters && newLetters.indexOf(token.char) !== -1) slot.classList.add('is-new');
-        slot.textContent = token.char;
-      }
-      el.appendChild(slot);
+    plan.parts.forEach(function (rowTokens) {
+      var rowEl = document.createElement('div');
+      rowEl.className = 'slotrow';
+
+      rowTokens.forEach(function (token) {
+        if (token.isSpace) {
+          var gap = document.createElement('span');
+          gap.className = 'gap';
+          rowEl.appendChild(gap);
+          return;
+        }
+        var slot = document.createElement('span');
+        slot.className = 'slot';
+        if (token.revealed) {
+          slot.classList.add('revealed');
+          if (newLetters && newLetters.indexOf(token.char) !== -1) slot.classList.add('is-new');
+          slot.textContent = token.char;
+        }
+        rowEl.appendChild(slot);
+      });
+
+      el.appendChild(rowEl);
     });
   }
 
@@ -418,7 +536,7 @@
     openOverlay(
       '<p class="sheet-kicker">' + cat.name + ' · difficulty ' + q.difficulty + '/3</p>' +
       '<h2 id="sheet-title">WELL DONE!</h2>' +
-      '<p class="sheet-answer"><small>Answer</small>' + q.answer + '</p>' +
+      '<p class="sheet-answer' + (q.answer.length > 18 ? ' is-long' : '') + '"><small>Answer</small>' + q.answer + '</p>' +
       '<div class="rows">' +
         '<div class="row"><span>Base reward</span><b>+' + reward.base + '</b></div>' +
         '<div class="row"><span>Lives left ×5</span><b>+' + reward.lives + '</b></div>' +
@@ -478,7 +596,7 @@
       renderHome();
 
       $('lose-answer').innerHTML =
-        '<p class="sheet-answer"><small>Answer</small>' + q.answer + '</p>';
+        '<p class="sheet-answer' + (q.answer.length > 18 ? ' is-long' : '') + '"><small>Answer</small>' + q.answer + '</p>';
       revealBtn.remove();
       toast('Answer revealed · -' + C.REVEAL_COST + ' coins');
     });
@@ -618,5 +736,10 @@
   /* used by tools/shoot.mjs to drive the board without knowing the bank */
   window.__huAnswer = function () {
     return session ? session.question.answer : '';
+  };
+
+  /* test hook: lets the screenshot harness open any puzzle, e.g. a 25-letter one */
+  window.__huStart = function (question, meta) {
+    startQuestion(question, Object.assign({ mode: 'level', level: 1 }, meta || {}));
   };
 })();

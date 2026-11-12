@@ -11,7 +11,7 @@
  *
  * Rules enforced (same as tools/validate.mjs):
  *   - category must exist in the bank
- *   - answer: A-Z and single spaces only, 2..16 characters
+ *   - answer: A-Z and single spaces only, 2..25 characters
  *   - question: 1..90 characters, no "|"
  *   - difficulty: 1, 2 or 3
  * Nothing is written when a row is invalid, unless --force is passed.

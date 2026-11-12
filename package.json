@@ -18,8 +18,8 @@
     "apk": "node tools/build-apk.mjs",
     "apk:release": "node tools/build-apk.mjs --release",
     "ios:sync": "npm run build:web && npx cap sync ios",
-    "ios:open": "npm run ios:sync && npx cap open ios"
-
+    "ios:open": "npm run ios:sync && npx cap open ios",
+    "check:layout": "node tools/long-answer-check.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^7.6.10",

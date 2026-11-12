@@ -28,6 +28,7 @@ npm start          # http://localhost:5173
 | Kinh tế | Thưởng xu theo mạng còn lại, độ khó, chuỗi thắng; gợi ý giá 30 xu |
 | Lưu tiến độ | `localStorage` (xu, màn, chuỗi, câu đã giải, cài đặt âm thanh) |
 | Giao diện | Nền tối "midnight arcade", ô chữ dạng tile phát sáng, bàn phím QWERTY |
+| Đáp án dài | Tự xuống dòng theo từ (1 hàng ≤ 22 ký tự, 2 hàng ≤ 20 chữ, 3 hàng tới 25 chữ) |
 | Âm thanh | Tổng hợp bằng WebAudio, không cần file âm thanh |
 
 ## Cấu trúc
@@ -41,6 +42,7 @@ data/questions.js     # 401 câu viết tay + 14 chủ đề (kèm icon SVG)
 data/questions.generated.js  # 6.131 câu sinh tự động (file build ra, đừng sửa tay)
 tools/generate.mjs    # sinh ngân hàng câu hỏi từ Wikidata (CC0)
 tools/validate.mjs    # kiểm tra dữ liệu trước khi phát hành
+tools/long-answer-check.mjs  # đo bố cục với đáp án 9/13/23/25 ký tự
 tools/import.mjs      # nhập hàng loạt từ CSV/JSON (có dry-run + backup)
 tools/test-core.mjs   # 14 test cho logic
 tools/smoke.mjs       # chơi thật một ván trong Chrome headless: 13 check
@@ -66,7 +68,7 @@ Ví dụ:
 Quy tắc:
 
 - `chủ-đề` phải là một trong 12 id: `animals, food, geo, science, movies, music, sports, history, tech, objects, jobs, body`
-- `ĐÁP ÁN` chỉ gồm `A–Z` và dấu cách, tối đa 16 ký tự, không dấu
+- `ĐÁP ÁN` chỉ gồm `A–Z` và dấu cách, tối đa 25 ký tự, không dấu
 - `độ-khó` là `1`, `2` hoặc `3`
 - câu hỏi nên ngắn (dưới ~90 ký tự) để vừa thẻ gợi ý
 
@@ -292,6 +294,7 @@ npm run ios:open
 npm start        # server tĩnh
 npm run import -- examples/sample-import.csv   # nhập câu hỏi từ CSV/JSON
 npm run generate     # sinh lại toàn bộ ngân hàng từ Wikidata
+npm run check:layout # kiểm tra bố cục với đáp án dài (25 ký tự)
 npm run apk          # build APK Android (debug)
 npm run check    # validate + test (nhanh, không cần Chrome)
 npm run smoke    # chơi thật 1 ván + kiểm tra lưu tiến độ (cần Chrome)

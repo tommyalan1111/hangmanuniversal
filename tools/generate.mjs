@@ -245,6 +245,7 @@ const seenQuestions = new Set();
   }
 }
 const answerUse = new Map();
+const MAX_ANSWER = 25; /* keep in sync with tools/validate.mjs */
 const byCategory = new Map();
 const report = [];
 
@@ -293,7 +294,7 @@ for (const type of TYPES) {
     if (answerSet.size !== 1) { dropped++; continue; }
     const answer = [...answerSet][0];
 
-    if (answer.length < 3 || answer.length > 16) { dropped++; continue; }
+    if (answer.length < 3 || answer.length > MAX_ANSWER) { dropped++; continue; }
     if (!/^[A-Z][A-Z ]*$/.test(answer)) { dropped++; continue; }
     if (answer.replace(/ /g, '').length < 3) { dropped++; continue; }
 

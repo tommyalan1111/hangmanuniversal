@@ -16,11 +16,15 @@
     "build:web": "node tools/build-web.mjs",
     "android:sync": "node tools/build-web.mjs && cap sync android",
     "apk": "node tools/build-apk.mjs",
-    "apk:release": "node tools/build-apk.mjs --release"
+    "apk:release": "node tools/build-apk.mjs --release",
+    "ios:sync": "npm run build:web && npx cap sync ios",
+    "ios:open": "npm run ios:sync && npx cap open ios"
+
   },
   "dependencies": {
     "@capacitor/android": "^7.6.10",
     "@capacitor/cli": "^7.6.10",
-    "@capacitor/core": "^7.6.10"
+    "@capacitor/core": "^7.6.10",
+    "@capacitor/ios": "^7.6.10"
   }
 }

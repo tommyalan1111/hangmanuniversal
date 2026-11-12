@@ -268,6 +268,15 @@ keytool -genkey -v -keystore hangman.keystore -alias hangman -keyalg RSA -keysiz
 
 Khai báo `signingConfigs` trong `android/app/build.gradle` rồi chạy `npm run apk:release`.
 
+## 🍎 Hướng dẫn Build iOS (Yêu cầu: macOS, Xcode)
+
+### 1. Cập nhật & Build hàng ngày
+Mỗi khi có thay đổi về code React, cập nhật giao diện, hoặc chạy script sinh thêm data câu hỏi mới, hãy gõ lệnh sau tại terminal:
+
+```bash
+npm run ios:open
+
+
 ## Bước tiếp theo (chưa làm)
 
 - Toàn bộ UI đang là tiếng Anh (khớp với ngân hàng câu hỏi). Nếu sau này cần

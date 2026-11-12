@@ -121,10 +121,17 @@ function normalizeAnswer(raw) {
 const categoryIds = new Set(bank.categories.map((c) => c.id));
 const knownQuestion = new Map();
 const knownAnswer = new Map();
+const knownExact = new Set(); // Thêm bộ lọc chống trùng 100%
+
 bank.questions.forEach((q) => {
-  knownQuestion.set(q.question.toLowerCase().replace(/[^a-z0-9]/g, ''), q.id);
-  knownAnswer.set(q.category + ':' + q.answer.toLowerCase(), q.id);
+  const qKey = q.question.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const aKey = q.category + ':' + q.answer.toLowerCase();
+  
+  knownQuestion.set(qKey, q.id);
+  knownAnswer.set(aKey, q.id);
+  knownExact.add(qKey + '|' + aKey); // Lưu lại cặp Câu hỏi + Đáp án
 });
+
 
 const errors = [];
 const warnings = [];
@@ -154,22 +161,36 @@ rows.forEach((row, i) => {
   else if (answer.length > 16) errors.push(where + ': answer longer than 16 characters');
 
   if (![1, 2, 3].includes(difficulty)) errors.push(where + ': difficulty must be 1, 2 or 3');
+    // (Đoạn trên giữ nguyên: các check empty, độ dài, difficulty...)
   if (errors.length > before) return;
 
   const qKey = question.toLowerCase().replace(/[^a-z0-9]/g, '');
-  if (knownQuestion.has(qKey)) {
-    warnings.push(where + ': duplicate question, skipped (already ' + knownQuestion.get(qKey) + ')');
+  const aKey = category + ':' + answer.toLowerCase();
+  const exactKey = qKey + '|' + aKey;
+
+  // 1. Nếu trùng chính xác 100% cả Câu hỏi VÀ Đáp án -> CHẶN
+  if (knownExact.has(exactKey)) {
+    warnings.push(where + ': exact duplicate (same question and answer), skipped');
     return;
   }
-  const aKey = category + ':' + answer.toLowerCase();
+
+  // 2. Nếu trùng Câu hỏi nhưng KHÁC Đáp án (Kiểu 1) -> Cho qua
+  if (knownQuestion.has(qKey)) {
+    warnings.push(where + ': duplicate question with different answer, keeping anyway');
+  }
+  
+  // 3. Nếu trùng Đáp án nhưng KHÁC Câu hỏi (Kiểu 2) -> Cho qua
   if (knownAnswer.has(aKey)) {
     warnings.push(where + ': answer "' + answer + '" already used in ' + category + ', keeping anyway');
   }
 
+  // Cập nhật state để check các dòng tiếp theo trong cùng 1 file CSV
   knownQuestion.set(qKey, 'new');
   knownAnswer.set(aKey, 'new');
+  knownExact.add(exactKey);
   accepted.push({ category, question, answer, difficulty });
 });
+
 
 /* ------------------------------------------------------------------ report */
 

@@ -11,7 +11,7 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 require(path.join(here, '..', 'data', 'questions.generated.js'));
 const data = require(path.join(here, '..', 'data', 'questions.js'));
 
-const MAX_ANSWER = 16;
+const MAX_ANSWER = 25;
 const errors = [];
 const warnings = [];
 

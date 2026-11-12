@@ -1,7 +1,150 @@
 category,question,answer,difficulty
-geo,"Which country is famous for fjords, glaciers and the midnight sun?",NORWAY,2
-science,Which star is closest to Earth?,SUN,1
-animals,Which colourful bird can mimic human speech?,PARROT,1
-food,Which fruit gives a pina colada its flavour?,PINEAPPLE,1
-tech,Which company builds the Falcon rockets?,SPACEX,2
-objects,What do you write with that can be erased?,PENCIL,1
+food,Can you name a tropical fruit ?,MANGO,1
+food,Can you name a tropical fruit ?,PAPAYA,2
+food,Can you name a tropical fruit ?,GUAVA,2
+food,Can you name a tropical fruit ?,LYCHEE,2
+food,Can you name a tropical fruit ?,JACKFRUIT,3
+food,Can you name a tropical fruit ?,BANANA,1
+food,Can you name a tropical fruit ?,PINEAPPLE,2
+food,Can you name a tropical fruit ?,COCONUT,2
+food,Can you name a tropical fruit ?,DRAGON FRUIT,3
+food,Can you name a tropical fruit ?,PASSION FRUIT,3
+food,Can you name a tropical fruit ?,STARFRUIT,3
+food,Can you name a tropical fruit ?,DURIAN,2
+food,Can you name a tropical fruit ?,RAMBUTAN,3
+food,Can you name a tropical fruit ?,KIWI,1
+food,Can you name a tropical fruit ?,ACEROLA,3
+nature,What animal lives under the sea ?,SHARK,1
+nature,What animal lives under the sea ?,DOLPHIN,2
+nature,What animal lives under the sea ?,OCTOPUS,2
+nature,What animal lives under the sea ?,SEAHORSE,3
+nature,What animal lives under the sea ?,SQUID,1
+nature,What animal lives under the sea ?,STINGRAY,3
+nature,What animal lives under the sea ?,WHALE,1
+nature,What animal lives under the sea ?,CRAB,1
+nature,What animal lives under the sea ?,LOBSTER,2
+nature,What animal lives under the sea ?,JELLYFISH,3
+nature,What animal lives under the sea ?,STARFISH,3
+nature,What animal lives under the sea ?,EEL,1
+nature,What animal lives under the sea ?,TURTLE,2
+nature,What animal lives under the sea ?,CLAM,1
+nature,What animal lives under the sea ?,OYSTER,2
+food,A thing that you could find in a candy bar,CHOCOLATE,2
+food,A thing that you could find in a candy bar,CARAMEL,2
+food,A thing that you could find in a candy bar,NOUGAT,2
+food,A thing that you could find in a candy bar,ALMONDS,2
+food,A thing that you could find in a candy bar,WAFER,1
+food,A thing that you could find in a candy bar,PEANUTS,2
+food,A thing that you could find in a candy bar,COCONUT,2
+food,A thing that you could find in a candy bar,TOFFEE,2
+food,A thing that you could find in a candy bar,MARSHMALLOW,3
+food,A thing that you could find in a candy bar,PECANS,2
+food,A thing that you could find in a candy bar,HONEY,1
+food,A thing that you could find in a candy bar,CRISP RICE,3
+food,A thing that you could find in a candy bar,PRETZEL,2
+food,A thing that you could find in a candy bar,HAZELNUTS,3
+general,Name a shape,CIRCLE,1
+general,Name a shape,SQUARE,1
+general,Name a shape,TRIANGLE,2
+general,Name a shape,OVAL,1
+general,Name a shape,RECTANGLE,3
+general,Name a shape,PENTAGON,3
+general,Name a shape,HEXAGON,3
+general,Name a shape,OCTAGON,3
+general,Name a shape,DIAMOND,2
+general,Name a shape,HEART,1
+general,Name a shape,STAR,1
+general,Name a shape,CROSS,1
+general,Name a shape,CRESCENT,3
+general,Name a shape,CONE,1
+general,Name a shape,CUBE,1
+daily,A thing in a medicine cabinet,BANDAGE,2
+daily,A thing in a medicine cabinet,ASPIRIN,2
+daily,A thing in a medicine cabinet,THERMOMETER,3
+daily,A thing in a medicine cabinet,COTTON SWABS,3
+daily,A thing in a medicine cabinet,TWEEZERS,3
+daily,A thing in a medicine cabinet,TOOTHPASTE,3
+daily,A thing in a medicine cabinet,FLOSS,1
+daily,A thing in a medicine cabinet,MOUTHWASH,3
+daily,A thing in a medicine cabinet,EYE DROPS,2
+daily,A thing in a medicine cabinet,SUNSCREEN,3
+daily,A thing in a medicine cabinet,LOTION,2
+daily,A thing in a medicine cabinet,VITAMINS,3
+daily,A thing in a medicine cabinet,ANTACID,2
+daily,A thing in a medicine cabinet,OINTMENT,3
+daily,A thing in a medicine cabinet,GAUZE,2
+food,Which fruit has red color ?,APPLE,1
+food,Which fruit has red color ?,STRAWBERRY,3
+food,Which fruit has red color ?,CHERRY,2
+food,Which fruit has red color ?,RASPBERRY,3
+food,Which fruit has red color ?,POMEGRANATE,3
+food,Which fruit has red color ?,WATERMELON,3
+food,Which fruit has red color ?,TOMATO,2
+food,Which fruit has red color ?,CRANBERRY,3
+food,Which fruit has red color ?,RED GRAPES,3
+food,Which fruit has red color ?,RED PLUM,2
+food,Which fruit has red color ?,RED PEAR,2
+food,Which fruit has red color ?,BLOOD ORANGE,3
+food,Which fruit has red color ?,GOJI BERRY,3
+food,Which fruit has red color ?,REDCURRANT,3
+food,Which fruit has red color ?,FIG,1
+food,A delicous sweet dessert after dinner,ICE CREAM,2
+food,A delicous sweet dessert after dinner,CAKE,1
+food,A delicous sweet dessert after dinner,BROWNIE,2
+food,A delicous sweet dessert after dinner,PUDDING,2
+food,A delicous sweet dessert after dinner,PIE,1
+food,A delicous sweet dessert after dinner,CHEESECAKE,3
+food,A delicous sweet dessert after dinner,COOKIE,2
+food,A delicous sweet dessert after dinner,DONUT,1
+food,A delicous sweet dessert after dinner,MACARON,2
+food,A delicous sweet dessert after dinner,TIRAMISU,3
+food,A delicous sweet dessert after dinner,MOUSSE,2
+food,A delicous sweet dessert after dinner,CUSTARD,2
+food,A delicous sweet dessert after dinner,TART,1
+food,A delicous sweet dessert after dinner,CUPCAKE,2
+food,A delicous sweet dessert after dinner,GELATO,2
+nature,An animal you would find in a farm,COW,1
+nature,An animal you would find in a farm,HORSE,1
+nature,An animal you would find in a farm,PIG,1
+nature,An animal you would find in a farm,SHEEP,1
+nature,An animal you would find in a farm,GOAT,1
+nature,An animal you would find in a farm,CHICKEN,2
+nature,An animal you would find in a farm,DUCK,1
+nature,An animal you would find in a farm,TURKEY,2
+nature,An animal you would find in a farm,DONKEY,2
+nature,An animal you would find in a farm,GOOSE,1
+nature,An animal you would find in a farm,RABBIT,2
+nature,An animal you would find in a farm,MULE,1
+nature,An animal you would find in a farm,LLAMA,1
+nature,An animal you would find in a farm,ALPACA,2
+nature,An animal you would find in a farm,PONY,1
+food,What people usually put in coffee ?,MILK,1
+food,What people usually put in coffee ?,SUGAR,1
+food,What people usually put in coffee ?,CREAM,1
+food,What people usually put in coffee ?,SYRUP,1
+food,What people usually put in coffee ?,CARAMEL,2
+food,What people usually put in coffee ?,ICE,1
+food,What people usually put in coffee ?,CINNAMON,3
+food,What people usually put in coffee ?,HONEY,1
+food,What people usually put in coffee ?,VANILLA,2
+food,What people usually put in coffee ?,MOCHA,1
+food,What people usually put in coffee ?,WHIPPED CREAM,3
+food,What people usually put in coffee ?,ALMOND MILK,3
+food,What people usually put in coffee ?,OAT MILK,2
+food,What people usually put in coffee ?,SOY MILK,2
+food,What people usually put in coffee ?,COCOA,1
+biology,A part of your body,HEAD,1
+biology,A part of your body,ARM,1
+biology,A part of your body,LEG,1
+biology,A part of your body,HAND,1
+biology,A part of your body,FOOT,1
+biology,A part of your body,EYE,1
+biology,A part of your body,EAR,1
+biology,A part of your body,NOSE,1
+biology,A part of your body,MOUTH,1
+biology,A part of your body,TOOTH,1
+biology,A part of your body,TONGUE,2
+biology,A part of your body,NECK,1
+biology,A part of your body,SHOULDER,3
+biology,A part of your body,BACK,1
+biology,A part of your body,CHEST,1

@@ -158,7 +158,7 @@ rows.forEach((row, i) => {
 
   if (!answer) errors.push(where + ': empty answer');
   else if (answer.length < 2) errors.push(where + ': answer too short');
-  else if (answer.length > 16) errors.push(where + ': answer longer than 16 characters');
+  else if (answer.length > 25) errors.push(where + ': answer longer than 25 characters');
 
   if (![1, 2, 3].includes(difficulty)) errors.push(where + ': difficulty must be 1, 2 or 3');
     // (Đoạn trên giữ nguyên: các check empty, độ dài, difficulty...)

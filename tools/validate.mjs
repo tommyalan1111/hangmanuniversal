@@ -39,9 +39,14 @@ for (const q of data.questions) {
 
   if (![1, 2, 3].includes(q.difficulty)) errors.push(`${where}: difficulty must be 1, 2 or 3`);
 
-  const key = q.question.toLowerCase().replace(/[^a-z0-9]/g, '');
-  if (seenQuestions.has(key)) errors.push(`${where}: duplicate question (also ${seenQuestions.get(key)})`);
-  seenQuestions.set(key, q.id);
+    const qKey = q.question.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const exactKey = qKey + '|' + q.category + ':' + q.answer.toLowerCase();
+  
+  if (seenQuestions.has(exactKey)) {
+    errors.push(`${where}: exact duplicate question and answer (also ${seenQuestions.get(exactKey)})`);
+  }
+  seenQuestions.set(exactKey, q.id);
+
 
   const answerKey = q.answer.toLowerCase();
   if (seenQuestions.has('ans:' + answerKey)) warnings.push(`${where}: answer also used by ${seenQuestions.get('ans:' + answerKey)}`);

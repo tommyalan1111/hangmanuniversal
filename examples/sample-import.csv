@@ -1,150 +1,253 @@
 category,question,answer,difficulty
-food,Can you name a tropical fruit ?,MANGO,1
-food,Can you name a tropical fruit ?,PAPAYA,2
-food,Can you name a tropical fruit ?,GUAVA,2
-food,Can you name a tropical fruit ?,LYCHEE,2
-food,Can you name a tropical fruit ?,JACKFRUIT,3
-food,Can you name a tropical fruit ?,BANANA,1
-food,Can you name a tropical fruit ?,PINEAPPLE,2
-food,Can you name a tropical fruit ?,COCONUT,2
-food,Can you name a tropical fruit ?,DRAGON FRUIT,3
-food,Can you name a tropical fruit ?,PASSION FRUIT,3
-food,Can you name a tropical fruit ?,STARFRUIT,3
-food,Can you name a tropical fruit ?,DURIAN,2
-food,Can you name a tropical fruit ?,RAMBUTAN,3
-food,Can you name a tropical fruit ?,KIWI,1
-food,Can you name a tropical fruit ?,ACEROLA,3
-nature,What animal lives under the sea ?,SHARK,1
-nature,What animal lives under the sea ?,DOLPHIN,2
-nature,What animal lives under the sea ?,OCTOPUS,2
-nature,What animal lives under the sea ?,SEAHORSE,3
-nature,What animal lives under the sea ?,SQUID,1
-nature,What animal lives under the sea ?,STINGRAY,3
-nature,What animal lives under the sea ?,WHALE,1
-nature,What animal lives under the sea ?,CRAB,1
-nature,What animal lives under the sea ?,LOBSTER,2
-nature,What animal lives under the sea ?,JELLYFISH,3
-nature,What animal lives under the sea ?,STARFISH,3
-nature,What animal lives under the sea ?,EEL,1
-nature,What animal lives under the sea ?,TURTLE,2
-nature,What animal lives under the sea ?,CLAM,1
-nature,What animal lives under the sea ?,OYSTER,2
-food,A thing that you could find in a candy bar,CHOCOLATE,2
-food,A thing that you could find in a candy bar,CARAMEL,2
-food,A thing that you could find in a candy bar,NOUGAT,2
-food,A thing that you could find in a candy bar,ALMONDS,2
-food,A thing that you could find in a candy bar,WAFER,1
-food,A thing that you could find in a candy bar,PEANUTS,2
-food,A thing that you could find in a candy bar,COCONUT,2
-food,A thing that you could find in a candy bar,TOFFEE,2
-food,A thing that you could find in a candy bar,MARSHMALLOW,3
-food,A thing that you could find in a candy bar,PECANS,2
-food,A thing that you could find in a candy bar,HONEY,1
-food,A thing that you could find in a candy bar,CRISP RICE,3
-food,A thing that you could find in a candy bar,PRETZEL,2
-food,A thing that you could find in a candy bar,HAZELNUTS,3
-general,Name a shape,CIRCLE,1
-general,Name a shape,SQUARE,1
-general,Name a shape,TRIANGLE,2
-general,Name a shape,OVAL,1
-general,Name a shape,RECTANGLE,3
-general,Name a shape,PENTAGON,3
-general,Name a shape,HEXAGON,3
-general,Name a shape,OCTAGON,3
-general,Name a shape,DIAMOND,2
-general,Name a shape,HEART,1
-general,Name a shape,STAR,1
-general,Name a shape,CROSS,1
-general,Name a shape,CRESCENT,3
-general,Name a shape,CONE,1
-general,Name a shape,CUBE,1
-daily,A thing in a medicine cabinet,BANDAGE,2
-daily,A thing in a medicine cabinet,ASPIRIN,2
-daily,A thing in a medicine cabinet,THERMOMETER,3
-daily,A thing in a medicine cabinet,COTTON SWABS,3
-daily,A thing in a medicine cabinet,TWEEZERS,3
-daily,A thing in a medicine cabinet,TOOTHPASTE,3
-daily,A thing in a medicine cabinet,FLOSS,1
-daily,A thing in a medicine cabinet,MOUTHWASH,3
-daily,A thing in a medicine cabinet,EYE DROPS,2
-daily,A thing in a medicine cabinet,SUNSCREEN,3
-daily,A thing in a medicine cabinet,LOTION,2
-daily,A thing in a medicine cabinet,VITAMINS,3
-daily,A thing in a medicine cabinet,ANTACID,2
-daily,A thing in a medicine cabinet,OINTMENT,3
-daily,A thing in a medicine cabinet,GAUZE,2
-food,Which fruit has red color ?,APPLE,1
-food,Which fruit has red color ?,STRAWBERRY,3
-food,Which fruit has red color ?,CHERRY,2
-food,Which fruit has red color ?,RASPBERRY,3
-food,Which fruit has red color ?,POMEGRANATE,3
-food,Which fruit has red color ?,WATERMELON,3
-food,Which fruit has red color ?,TOMATO,2
-food,Which fruit has red color ?,CRANBERRY,3
-food,Which fruit has red color ?,RED GRAPES,3
-food,Which fruit has red color ?,RED PLUM,2
-food,Which fruit has red color ?,RED PEAR,2
-food,Which fruit has red color ?,BLOOD ORANGE,3
-food,Which fruit has red color ?,GOJI BERRY,3
-food,Which fruit has red color ?,REDCURRANT,3
-food,Which fruit has red color ?,FIG,1
-food,A delicous sweet dessert after dinner,ICE CREAM,2
-food,A delicous sweet dessert after dinner,CAKE,1
-food,A delicous sweet dessert after dinner,BROWNIE,2
-food,A delicous sweet dessert after dinner,PUDDING,2
-food,A delicous sweet dessert after dinner,PIE,1
-food,A delicous sweet dessert after dinner,CHEESECAKE,3
-food,A delicous sweet dessert after dinner,COOKIE,2
-food,A delicous sweet dessert after dinner,DONUT,1
-food,A delicous sweet dessert after dinner,MACARON,2
-food,A delicous sweet dessert after dinner,TIRAMISU,3
-food,A delicous sweet dessert after dinner,MOUSSE,2
-food,A delicous sweet dessert after dinner,CUSTARD,2
-food,A delicous sweet dessert after dinner,TART,1
-food,A delicous sweet dessert after dinner,CUPCAKE,2
-food,A delicous sweet dessert after dinner,GELATO,2
-nature,An animal you would find in a farm,COW,1
-nature,An animal you would find in a farm,HORSE,1
-nature,An animal you would find in a farm,PIG,1
-nature,An animal you would find in a farm,SHEEP,1
-nature,An animal you would find in a farm,GOAT,1
-nature,An animal you would find in a farm,CHICKEN,2
-nature,An animal you would find in a farm,DUCK,1
-nature,An animal you would find in a farm,TURKEY,2
-nature,An animal you would find in a farm,DONKEY,2
-nature,An animal you would find in a farm,GOOSE,1
-nature,An animal you would find in a farm,RABBIT,2
-nature,An animal you would find in a farm,MULE,1
-nature,An animal you would find in a farm,LLAMA,1
-nature,An animal you would find in a farm,ALPACA,2
-nature,An animal you would find in a farm,PONY,1
-food,What people usually put in coffee ?,MILK,1
-food,What people usually put in coffee ?,SUGAR,1
-food,What people usually put in coffee ?,CREAM,1
-food,What people usually put in coffee ?,SYRUP,1
-food,What people usually put in coffee ?,CARAMEL,2
-food,What people usually put in coffee ?,ICE,1
-food,What people usually put in coffee ?,CINNAMON,3
-food,What people usually put in coffee ?,HONEY,1
-food,What people usually put in coffee ?,VANILLA,2
-food,What people usually put in coffee ?,MOCHA,1
-food,What people usually put in coffee ?,WHIPPED CREAM,3
-food,What people usually put in coffee ?,ALMOND MILK,3
-food,What people usually put in coffee ?,OAT MILK,2
-food,What people usually put in coffee ?,SOY MILK,2
-food,What people usually put in coffee ?,COCOA,1
-biology,A part of your body,HEAD,1
-biology,A part of your body,ARM,1
-biology,A part of your body,LEG,1
-biology,A part of your body,HAND,1
-biology,A part of your body,FOOT,1
-biology,A part of your body,EYE,1
-biology,A part of your body,EAR,1
-biology,A part of your body,NOSE,1
-biology,A part of your body,MOUTH,1
-biology,A part of your body,TOOTH,1
-biology,A part of your body,TONGUE,2
-biology,A part of your body,NECK,1
-biology,A part of your body,SHOULDER,3
-biology,A part of your body,BACK,1
-biology,A part of your body,CHEST,1
+food,A familliar donut flavoring,CHOCOLATE,2
+food,A familliar donut flavoring,VANILLA,2
+food,A familliar donut flavoring,GLAZED,2
+food,A familliar donut flavoring,STRAWBERRY,3
+food,A familliar donut flavoring,MAPLE,1
+food,A familliar donut flavoring,CINNAMON,3
+food,A familliar donut flavoring,BOSTON CREAM,3
+food,A familliar donut flavoring,JELLY,1
+food,A familliar donut flavoring,BLUEBERRY,3
+food,A familliar donut flavoring,POWDERED SUGAR,3
+food,A familliar donut flavoring,CARAMEL,2
+food,A familliar donut flavoring,LEMON,1
+food,A familliar donut flavoring,RASPBERRY,3
+food,A familliar donut flavoring,APPLE SPICE,3
+food,A familliar donut flavoring,COFFEE,2
+food,You put this into a pot,WATER,1
+food,You put this into a pot,SOUP,1
+food,You put this into a pot,PASTA,1
+food,You put this into a pot,RICE,1
+food,You put this into a pot,MEAT,1
+food,You put this into a pot,VEGETABLES,3
+food,You put this into a pot,BEANS,1
+food,You put this into a pot,STEW,1
+food,You put this into a pot,CHILI,1
+food,You put this into a pot,POTATOES,3
+food,You put this into a pot,SAUCE,1
+food,You put this into a pot,OIL,1
+food,You put this into a pot,NOODLES,2
+food,You put this into a pot,BROTH,1
+food,You put this into a pot,CURRY,1
+geo,Name a country that speak spanish,SPAIN,1
+geo,Name a country that speak spanish,MEXICO,1
+geo,Name a country that speak spanish,ARGENTINA,3
+geo,Name a country that speak spanish,COLOMBIA,3
+geo,Name a country that speak spanish,PERU,1
+geo,Name a country that speak spanish,CHILE,1
+geo,Name a country that speak spanish,VENEZUELA,3
+geo,Name a country that speak spanish,ECUADOR,2
+geo,Name a country that speak spanish,CUBA,1
+geo,Name a country that speak spanish,BOLIVIA,2
+geo,Name a country that speak spanish,URUGUAY,2
+geo,Name a country that speak spanish,PANAMA,2
+geo,Name a country that speak spanish,COSTA RICA,3
+geo,Name a country that speak spanish,HONDURAS,3
+geo,Name a country that speak spanish,GUATEMALA,3
+nature,Can you guess this african animal ?,LION,1
+nature,Can you guess this african animal ?,ELEPHANT,3
+nature,Can you guess this african animal ?,GIRAFFE,2
+nature,Can you guess this african animal ?,ZEBRA,1
+nature,Can you guess this african animal ?,HIPPO,1
+nature,Can you guess this african animal ?,RHINO,1
+nature,Can you guess this african animal ?,CHEETAH,2
+nature,Can you guess this african animal ?,LEOPARD,2
+nature,Can you guess this african animal ?,GORILLA,2
+nature,Can you guess this african animal ?,HYENA,1
+nature,Can you guess this african animal ?,OSTRICH,2
+nature,Can you guess this african animal ?,MEERKAT,2
+nature,Can you guess this african animal ?,BABOON,2
+nature,Can you guess this african animal ?,WILDEBEEST,3
+nature,Can you guess this african animal ?,GAZELLE,2
+daily,You can find bunk beds in ...,HOSTEL,2
+daily,You can find bunk beds in ...,DORMITORY,3
+daily,You can find bunk beds in ...,CAMP,1
+daily,You can find bunk beds in ...,CABIN,1
+daily,You can find bunk beds in ...,SUBMARINE,3
+daily,You can find bunk beds in ...,TRAIN,1
+daily,You can find bunk beds in ...,ORPHANAGE,3
+daily,You can find bunk beds in ...,BARRACKS,3
+daily,You can find bunk beds in ...,PRISON,2
+daily,You can find bunk beds in ...,CRUISE SHIP,3
+daily,You can find bunk beds in ...,BEDROOM,2
+daily,You can find bunk beds in ...,SHELTER,2
+daily,You can find bunk beds in ...,FIREHOUSE,3
+daily,You can find bunk beds in ...,JAIL,1
+geo,This place is very cold it is ...,ANTARCTICA,3
+geo,This place is very cold it is ...,ARCTIC,2
+geo,This place is very cold it is ...,ALASKA,2
+geo,This place is very cold it is ...,SIBERIA,2
+geo,This place is very cold it is ...,GREENLAND,3
+geo,This place is very cold it is ...,ICELAND,2
+geo,This place is very cold it is ...,CANADA,1
+geo,This place is very cold it is ...,RUSSIA,1
+geo,This place is very cold it is ...,FREEZER,2
+geo,This place is very cold it is ...,FRIDGE,2
+geo,This place is very cold it is ...,TUNDRA,2
+geo,This place is very cold it is ...,GLACIER,2
+geo,This place is very cold it is ...,MOUNTAIN,3
+geo,This place is very cold it is ...,SPACE,1
+general,This zodiac sign is has a name of an animal,ARIES,1
+general,This zodiac sign is has a name of an animal,TAURUS,2
+general,This zodiac sign is has a name of an animal,CANCER,2
+general,This zodiac sign is has a name of an animal,LEO,1
+general,This zodiac sign is has a name of an animal,SCORPIO,3
+general,This zodiac sign is has a name of an animal,CAPRICORN,3
+general,This zodiac sign is has a name of an animal,PISCES,2
+daily,You read this thing this is a/an ...,BOOK,1
+daily,You read this thing this is a/an ...,NEWSPAPER,3
+daily,You read this thing this is a/an ...,MAGAZINE,3
+daily,You read this thing this is a/an ...,ARTICLE,2
+daily,You read this thing this is a/an ...,BLOG,1
+daily,You read this thing this is a/an ...,COMIC,1
+daily,You read this thing this is a/an ...,MENU,1
+daily,You read this thing this is a/an ...,SIGN,1
+daily,You read this thing this is a/an ...,EMAIL,1
+daily,You read this thing this is a/an ...,LETTER,2
+daily,You read this thing this is a/an ...,NOVEL,1
+daily,You read this thing this is a/an ...,ESSAY,1
+daily,You read this thing this is a/an ...,POEM,1
+daily,You read this thing this is a/an ...,MANUAL,2
+daily,You read this thing this is a/an ...,DICTIONARY,3
+geo,This is a most well known monument in the world,EIFFEL TOWER,3
+geo,This is a most well known monument in the world,TAJ MAHAL,2
+geo,This is a most well known monument in the world,COLOSSEUM,3
+geo,This is a most well known monument in the world,BIG BEN,2
+geo,This is a most well known monument in the world,PYRAMIDS,3
+geo,This is a most well known monument in the world,SPHINX,2
+geo,This is a most well known monument in the world,PARTHENON,3
+geo,This is a most well known monument in the world,STONEHENGE,3
+geo,This is a most well known monument in the world,MACHU PICCHU,3
+geo,This is a most well known monument in the world,LOUVRE,2
+geo,This is a most well known monument in the world,ANGKOR WAT,3
+geo,This is a most well known monument in the world,MOUNT RUSHMORE,3
+geo,This is a most well known monument in the world,BURJ KHALIFA,3
+sports,A famous and most well known boxer,ALI,1
+sports,A famous and most well known boxer,TYSON,1
+sports,A famous and most well known boxer,MAYWEATHER,3
+sports,A famous and most well known boxer,PACQUIAO,3
+sports,A famous and most well known boxer,FOREMAN,2
+sports,A famous and most well known boxer,FRAZIER,2
+sports,A famous and most well known boxer,HOLYFIELD,3
+sports,A famous and most well known boxer,MARCIANO,3
+sports,A famous and most well known boxer,DE LA HOYA,3
+sports,A famous and most well known boxer,DURAN,1
+sports,A famous and most well known boxer,LEONARD,2
+sports,A famous and most well known boxer,ROBINSON,3
+sports,A famous and most well known boxer,DEMPSEY,2
+sports,A famous and most well known boxer,LOUIS,1
+sports,A famous and most well known boxer,GOLOVKIN,3
+food,Something you would see at afternoon tea,TEAPOT,2
+food,Something you would see at afternoon tea,SCONE,1
+food,Something you would see at afternoon tea,CUP,1
+food,Something you would see at afternoon tea,SAUCER,2
+food,Something you would see at afternoon tea,JAM,1
+food,Something you would see at afternoon tea,CREAM,1
+food,Something you would see at afternoon tea,SANDWICH,3
+food,Something you would see at afternoon tea,CAKE,1
+food,Something you would see at afternoon tea,BISCUIT,2
+food,Something you would see at afternoon tea,PASTRY,2
+food,Something you would see at afternoon tea,SUGAR,1
+food,Something you would see at afternoon tea,MILK,1
+food,Something you would see at afternoon tea,SPOON,1
+food,Something you would see at afternoon tea,TART,1
+food,Something you would see at afternoon tea,NAPKIN,2
+food,You usually eat this with crackers,CHEESE,2
+food,You usually eat this with crackers,SOUP,1
+food,You usually eat this with crackers,DIP,1
+food,You usually eat this with crackers,PEANUT BUTTER,3
+food,You usually eat this with crackers,SALAMI,2
+food,You usually eat this with crackers,HUMMUS,2
+food,You usually eat this with crackers,CAVIAR,2
+food,You usually eat this with crackers,JAM,1
+food,You usually eat this with crackers,SARDINES,3
+food,You usually eat this with crackers,BUTTER,2
+food,You usually eat this with crackers,PATE,1
+food,You usually eat this with crackers,TUNA,1
+food,You usually eat this with crackers,CHILI,1
+food,You usually eat this with crackers,GUACAMOLE,3
+food,You usually eat this with crackers,SALSA,1
+tech,A well known search engine on internet,GOOGLE,2
+tech,A well known search engine on internet,BING,1
+tech,A well known search engine on internet,YAHOO,1
+tech,A well known search engine on internet,DUCKDUCKGO,3
+tech,A well known search engine on internet,BAIDU,1
+tech,A well known search engine on internet,YANDEX,2
+tech,A well known search engine on internet,ASK,1
+tech,A well known search engine on internet,AOL,1
+tech,A well known search engine on internet,LYCOS,1
+tech,A well known search engine on internet,EXCITE,2
+food,This is a kind of nut,ALMOND,2
+food,This is a kind of nut,WALNUT,2
+food,This is a kind of nut,CASHEW,2
+food,This is a kind of nut,PECAN,1
+food,This is a kind of nut,PISTACHIO,3
+food,This is a kind of nut,MACADAMIA,3
+food,This is a kind of nut,HAZELNUT,3
+food,This is a kind of nut,PEANUT,2
+food,This is a kind of nut,CHESTNUT,3
+food,This is a kind of nut,BRAZIL NUT,3
+food,This is a kind of nut,PINE NUT,3
+food,This is a kind of nut,ACORN,1
+food,This is a kind of nut,HICKORY,2
+food,This is a kind of nut,COCONUT,2
+daily,A thing you find inside a car,STEERING WHEEL,3
+daily,A thing you find inside a car,SEAT,1
+daily,A thing you find inside a car,SEATBELT,3
+daily,A thing you find inside a car,RADIO,1
+daily,A thing you find inside a car,MIRROR,2
+daily,A thing you find inside a car,ENGINE,2
+daily,A thing you find inside a car,PEDAL,1
+daily,A thing you find inside a car,BRAKE,1
+daily,A thing you find inside a car,CLUTCH,2
+daily,A thing you find inside a car,SPEEDOMETER,3
+daily,A thing you find inside a car,GLOVEBOX,3
+daily,A thing you find inside a car,AIRBAG,2
+daily,A thing you find inside a car,CARPET,2
+daily,A thing you find inside a car,MAT,1
+daily,A thing you find inside a car,HORN,1
+film,A famous looney tunes characters,BUGS BUNNY,3
+film,A famous looney tunes characters,DAFFY DUCK,3
+film,A famous looney tunes characters,PORKY PIG,3
+film,A famous looney tunes characters,TWEETY,2
+film,A famous looney tunes characters,SYLVESTER,3
+film,A famous looney tunes characters,ELMER FUDD,3
+film,A famous looney tunes characters,ROAD RUNNER,3
+film,A famous looney tunes characters,WILE E COYOTE,3
+film,A famous looney tunes characters,TAZ,1
+film,A famous looney tunes characters,MARVIN,2
+film,A famous looney tunes characters,SPEEDY,2
+film,A famous looney tunes characters,PEPE LE PEW,3
+film,A famous looney tunes characters,FOGHORN,2
+film,A famous looney tunes characters,YOSEMITE SAM,3
+film,A famous looney tunes characters,GRANNY,2
+film,A DC super heroes,SUPERMAN,3
+film,A DC super heroes,BATMAN,2
+film,A DC super heroes,WONDER WOMAN,3
+film,A DC super heroes,FLASH,1
+film,A DC super heroes,AQUAMAN,2
+film,A DC super heroes,GREEN LANTERN,3
+film,A DC super heroes,CYBORG,2
+film,A DC super heroes,SHAZAM,2
+film,A DC super heroes,GREEN ARROW,3
+film,A DC super heroes,SUPERGIRL,3
+film,A DC super heroes,BATGIRL,2
+film,A DC super heroes,NIGHTWING,3
+film,A DC super heroes,ROBIN,1
+film,A DC super heroes,HAWKGIRL,3
+film,A DC super heroes,MARTIAN,2
+film,A Marvel super heroes,SPIDERMAN,3
+film,A Marvel super heroes,IRON MAN,3
+film,A Marvel super heroes,THOR,1
+film,A Marvel super heroes,HULK,1
+film,A Marvel super heroes,CAPTAIN AMERICA,3
+film,A Marvel super heroes,BLACK WIDOW,3
+film,A Marvel super heroes,WOLVERINE,3
+film,A Marvel super heroes,DEADPOOL,3
+film,A Marvel super heroes,BLACK PANTHER,3
+film,A Marvel super heroes,DOCTOR STRANGE,3
+film,A Marvel super heroes,ANT MAN,2
+film,A Marvel super heroes,DAREDEVIL,3
+film,A Marvel super heroes,CYCLOPS,2
+film,A Marvel super heroes,STORM,1
+film,A Marvel super heroes,GROOT,1

@@ -28,7 +28,7 @@ npm start          # http://localhost:5173
 | Kinh tế | Thưởng xu theo mạng còn lại, độ khó, chuỗi thắng; gợi ý giá 30 xu |
 | Lưu tiến độ | `localStorage` (xu, màn, chuỗi, câu đã giải, cài đặt âm thanh) |
 | Giao diện | Nền tối "midnight arcade", ô chữ dạng tile phát sáng, bàn phím QWERTY |
-| Đáp án dài | Tự xuống dòng theo từ (1 hàng ≤ 22 ký tự, 2 hàng ≤ 20 chữ, 3 hàng tới 25 chữ) |
+| Đáp án dài | Xuống dòng theo từ, không cắt giữa từ; chỉ từ dài hơn cả hàng mới bị chia |
 | Âm thanh | Tổng hợp bằng WebAudio, không cần file âm thanh |
 
 ## Cấu trúc
@@ -294,7 +294,7 @@ npm run ios:open
 npm start        # server tĩnh
 npm run import -- examples/sample-import.csv   # nhập câu hỏi từ CSV/JSON
 npm run generate     # sinh lại toàn bộ ngân hàng từ Wikidata
-npm run check:layout # kiểm tra bố cục với đáp án dài (25 ký tự)
+npm run check:layout # kiểm tra bố cục: đáp án 9/13/23/25 ký tự + ca hồi quy
 npm run apk          # build APK Android (debug)
 npm run check    # validate + test (nhanh, không cần Chrome)
 npm run smoke    # chơi thật 1 ván + kiểm tra lưu tiến độ (cần Chrome)

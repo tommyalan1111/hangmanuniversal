@@ -192,6 +192,37 @@ try {
     await fs.writeFile(path.join(outDir, `long-${viewport.w}-win.png`), Buffer.from(shot.data, 'base64'));
   }
 
+  /* regression: the previous question must not shrink the next one's tiles */
+  await cdp.send('Emulation.setDeviceMetricsOverride', {
+    width: 420, height: 922, deviceScaleFactor: 2, mobile: true
+  });
+  {
+    const loaded = cdp.once('Page.loadEventFired');
+    await cdp.send('Page.navigate', { url: URL_BASE });
+    await loaded;
+    await sleep(700);
+
+    await cdp.eval(`window.__huStart({ id: 'seq-1', category: 'animals', question: 'Which pet says meow?', answer: 'CAT', difficulty: 1 })`);
+    await sleep(250);
+    await cdp.eval(`window.__huStart({ id: 'seq-2', category: 'food', question: 'Name anything you would put on ice cream', answer: 'CHOCOLATE', difficulty: 2 })`);
+    await sleep(350);
+
+    const seqProbe = await cdp.eval(`(() => {
+      const rows = document.querySelectorAll('.slotrow').length;
+      const counts = [...document.querySelectorAll('.slotrow')].map((r) => r.querySelectorAll('.slot').length);
+      const tile = getComputedStyle(document.getElementById('play-slots')).getPropertyValue('--tile').trim();
+      return { rows: rows, counts: counts, tile: tile };
+    })()`);
+
+    console.log(`420px CAT then CHOCOLATE rows=${seqProbe.rows} [${seqProbe.counts.join(',')}] tile=${seqProbe.tile}`);
+    if (seqProbe.rows !== 1) {
+      problems.push(`420px CHOCOLATE after CAT wrapped into ${seqProbe.rows} rows (${seqProbe.counts.join('/')})`);
+    }
+
+    const shot = await cdp.send('Page.captureScreenshot', { format: 'png' });
+    await fs.writeFile(path.join(outDir, 'long-420-chocolate.png'), Buffer.from(shot.data, 'base64'));
+  }
+
   cdp.ws.close();
 } catch (err) {
   console.error('failed:', err.message);

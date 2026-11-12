@@ -1,108 +1,90 @@
 category,question,answer,difficulty
-entertainment,A famous game studio,NINTENDO,1
-entertainment,A famous game studio,SONY,1
-entertainment,A famous game studio,MICROSOFT,1
-entertainment,A famous game studio,UBISOFT,2
-entertainment,A famous game studio,ELECTRONIC ARTS,3
-entertainment,A famous game studio,SQUARE ENIX,2
-entertainment,A famous game studio,CAPCOM,2
-entertainment,A famous game studio,SEGA,1
-entertainment,A famous game studio,ROCKSTAR GAMES,2
-entertainment,A famous game studio,NAUGHTY DOG,3
-entertainment,A famous game studio,BETHESDA,2
-entertainment,A famous game studio,BLIZZARD,2
-entertainment,A famous game studio,VALVE,2
-entertainment,A famous game studio,EPIC GAMES,2
-entertainment,A famous game studio,BIOWARE,3
-entertainment,A famous game studio,BUNGIE,3
-entertainment,A famous game studio,INSOMNIAC,3
-entertainment,A famous game studio,CD PROJEKT RED,3
-entertainment,A famous game studio,FROM SOFTWARE,3
-entertainment,A famous game studio,KONAMI,2
-entertainment,A famous game studio,KOJIMA PRODUCT,3
-entertainment,A famous game studio,BANDAI NAMCO,3
-entertainment,A famous game studio,ACTIVISION,2
-entertainment,A famous game studio,RIOT GAMES,2
-entertainment,A famous game character,MARIO,1
-entertainment,A famous game character,LUIGI,1
-entertainment,A famous game character,BOWSER,2
-entertainment,A famous game character,LINK,1
-entertainment,A famous game character,ZELDA,1
-entertainment,A famous game character,PIKACHU,1
-entertainment,A famous game character,SONIC,1
-entertainment,A famous game character,MASTER CHIEF,2
-entertainment,A famous game character,KRATOS,2
-entertainment,A famous game character,LARA CROFT,2
-entertainment,A famous game character,PAC MAN,1
-entertainment,A famous game character,DONKEY KONG,2
-entertainment,A famous game character,CLOUD STRIFE,3
-entertainment,A famous game character,SEPHIROTH,3
-entertainment,A famous game character,SOLID SNAKE,2
-entertainment,A famous game character,GORDON FREEMAN,3
-entertainment,A famous game character,RYU,2
-entertainment,A famous game character,CHUN LI,2
-entertainment,A famous game character,SCORPION,2
-entertainment,A famous game character,SUB ZERO,2
-entertainment,A famous game character,MEGA MAN,2
-entertainment,A famous game character,SAMUS ARAN,3
-entertainment,A famous game character,NATHAN DRAKE,2
-entertainment,A famous game character,GERALT,2
-entertainment,A famous game character,DOOMGUY,3
-entertainment,A famous game character,MARCUS FENIX,3
-entertainment,A famous game character,ALOY,3
-entertainment,A famous game character,ELLIE,2
-entertainment,A famous game character,JOEL,2
-entertainment,A famous game character,EZIO,3
-entertainment,A famous game character,CRASH BANDICOOT,3
-entertainment,A famous movie franchise,STAR WARS,1
-entertainment,A famous movie franchise,MARVEL,1
-entertainment,A famous movie franchise,AVENGERS,1
-entertainment,A famous movie franchise,HARRY POTTER,1
-entertainment,A famous movie franchise,JAMES BOND,1
-entertainment,A famous movie franchise,FAST AND FURIOUS,3
-entertainment,A famous movie franchise,JURASSIC PARK,2
-entertainment,A famous movie franchise,THE HOBBIT,2
-entertainment,A famous movie franchise,THE MATRIX,2
-entertainment,A famous movie franchise,TRANSFORMERS,2
-entertainment,A famous movie franchise,TERMINATOR,2
-entertainment,A famous movie franchise,TOY STORY,1
-entertainment,A famous movie franchise,SHREK,1
-entertainment,A famous movie franchise,ICE AGE,1
-entertainment,A famous movie franchise,TWILIGHT,2
-entertainment,A famous movie franchise,HUNGER GAMES,2
-entertainment,A famous movie franchise,JOHN WICK,2
-entertainment,A famous movie franchise,INDIANA JONES,2
-entertainment,A famous movie franchise,ROCKY,2
-entertainment,A famous movie franchise,RAMBO,2
-entertainment,A famous movie franchise,MAD MAX,2
-entertainment,A famous movie franchise,ALIEN,2
-entertainment,A famous movie franchise,PREDATOR,2
-entertainment,A famous movie franchise,SPIDER MAN,1
-entertainment,A famous movie franchise,BATMAN,1
-entertainment,A famous movie franchise,X MEN,1
-entertainment,A famous movie franchise,PIRATES,2
-entertainment,A famous movie franchise,DIE HARD,2
-entertainment,A famous game franchise,SUPER MARIO,1
-entertainment,A famous game franchise,POKEMON,1
-entertainment,A famous game franchise,FINAL FANTASY,2
-entertainment,A famous game franchise,CALL OF DUTY,2
-entertainment,A famous game franchise,GRAND THEFT AUTO,3
-entertainment,A famous game franchise,HALO,2
-entertainment,A famous game franchise,GOD OF WAR,2
-entertainment,A famous game franchise,TOMB RAIDER,2
-entertainment,A famous game franchise,RESIDENT EVIL,2
-entertainment,A famous game franchise,STREET FIGHTER,2
-entertainment,A famous game franchise,MORTAL KOMBAT,2
-entertainment,A famous game franchise,ASSASSINS CREED,3
-entertainment,A famous game franchise,FALLOUT,2
-entertainment,A famous game franchise,ELDER SCROLLS,3
-entertainment,A famous game franchise,MINECRAFT,1
-entertainment,A famous game franchise,ROBLOX,1
-entertainment,A famous game franchise,FORTNITE,1
-entertainment,A famous game franchise,ANIMAL CROSSING,2
-entertainment,A famous game franchise,THE SIMS,2
-entertainment,A famous game franchise,NEED FOR SPEED,2
-entertainment,A famous game franchise,GRAN TURISMO,3
-entertainment,A famous game franchise,TEKKEN,2
-entertainment,A famous game franchise,SUPER SMASH BROS,3
-entertainment,A famous game franchise,METAL GEAR SOLID,3
+geo,First thing comes in mind when mentioning Portugal,PORT WINE,1
+geo,First thing comes in mind when mentioning Portugal,PASTEL DE NATA,1
+geo,First thing comes in mind when mentioning Portugal,CRISTIANO RONALDO,1
+geo,First thing comes in mind when mentioning Portugal,LISBON,1
+geo,First thing comes in mind when mentioning Portugal,PORTO,1
+geo,First thing comes in mind when mentioning Portugal,YELLOW TRAM,2
+geo,First thing comes in mind when mentioning Portugal,VASCO DA GAMA,2
+geo,First thing comes in mind when mentioning Portugal,AZULEJOS,2
+geo,First thing comes in mind when mentioning Portugal,ATLANTIC OCEAN,2
+geo,First thing comes in mind when mentioning Portugal,ALGARVE,2
+geo,First thing comes in mind when mentioning Portugal,MADEIRA WINE,2
+geo,First thing comes in mind when mentioning Portugal,FADO MUSIC,2
+geo,First thing comes in mind when mentioning Portugal,COD FISH,1
+geo,First thing comes in mind when mentioning Portugal,PERI PERI CHICKEN,2
+geo,First thing comes in mind when mentioning Portugal,SINTRA PALACE,2
+geo,First thing comes in mind when mentioning Portugal,BELEM TOWER,2
+geo,First thing comes in mind when mentioning Portugal,CORK OAK,3
+geo,First thing comes in mind when mentioning Portugal,ROSA DOS VENTOS,3
+geo,First thing comes in mind when mentioning Portugal,EUROPEAN SUNSET,2
+geo,First thing comes in mind when mentioning Portugal,SURFING WAVES,2
+geo,First thing comes in mind when mentioning Portugal,NAZARE WAVES,3
+geo,First thing comes in mind when mentioning Portugal,SEAFOOD RICE,2
+geo,First thing comes in mind when mentioning Portugal,PORTUGUESE TART,1
+geo,First thing comes in mind when mentioning Portugal,GOLDEN BEACHES,2
+geo,First thing comes in mind when mentioning Portugal,HISTORIC CASTLES,2
+geo,First thing comes in mind when mentioning Portugal,FRIENDLY PEOPLE,2
+geo,First thing comes in mind when mentioning Portugal,OLD TRAMWAY,2
+geo,First thing comes in mind when mentioning Portugal,OCEAN VIEW,1
+geo,First thing comes in mind when mentioning Portugal,EUROPE WEST COAST,3
+geo,First thing comes in mind when mentioning Portugal,CRISTIANO AND PORTO,3
+geo,First thing comes in mind when mentioning Israel,JERUSALEM,1
+geo,First thing comes in mind when mentioning Israel,TEL AVIV,1
+geo,First thing comes in mind when mentioning Israel,THE DEAD SEA,1
+geo,First thing comes in mind when mentioning Israel,WAILING WALL,2
+geo,First thing comes in mind when mentioning Israel,HOLY LAND,1
+geo,First thing comes in mind when mentioning Israel,DESERT,1
+geo,First thing comes in mind when mentioning Israel,KIBBUTZ,2
+geo,First thing comes in mind when mentioning Israel,START UP NATION,2
+geo,First thing comes in mind when mentioning Israel,MEDITERRANEAN SEA,2
+geo,First thing comes in mind when mentioning Israel,FALAFEL,1
+geo,First thing comes in mind when mentioning Israel,HUMMUS,1
+geo,First thing comes in mind when mentioning Israel,SHAKSHUKA,2
+geo,First thing comes in mind when mentioning Israel,ISRAELI SALAD,2
+geo,First thing comes in mind when mentioning Israel,DOMED ROCK,2
+geo,First thing comes in mind when mentioning Israel,CHURCH OF NATIVITY,3
+geo,First thing comes in mind when mentioning Israel,BIRTHPLACE OF JESUS,3
+geo,First thing comes in mind when mentioning Israel,ANCIENT HISTORY,2
+geo,First thing comes in mind when mentioning Israel,HIGH TECH HUBS,2
+geo,First thing comes in mind when mentioning Israel,MASADA FORTRESS,3
+geo,First thing comes in mind when mentioning Israel,SEA OF GALILEE,2
+geo,First thing comes in mind when mentioning Israel,NEGEV DESERT,2
+geo,First thing comes in mind when mentioning Israel,TEL AVIV BEACH,2
+geo,First thing comes in mind when mentioning Israel,IRON DOME,2
+geo,First thing comes in mind when mentioning Israel,TAHINI,2
+geo,First thing comes in mind when mentioning Israel,PITA BREAD,1
+geo,First thing comes in mind when mentioning Israel,KOSHER FOOD,2
+geo,First thing comes in mind when mentioning Israel,ANCIENT RUINS,2
+geo,First thing comes in mind when mentioning Israel,HISTORIC SITE,2
+geo,First thing comes in mind when mentioning Israel,JERUSALEM AND SEA,3
+geo,First thing comes in mind when mentioning Russia,MOSCOW,1
+geo,First thing comes in mind when mentioning Russia,SAINT PETERSBURG,2
+geo,First thing comes in mind when mentioning Russia,RED SQUARE,1
+geo,First thing comes in mind when mentioning Russia,KREMLIN,1
+geo,First thing comes in mind when mentioning Russia,SIBERIA,1
+geo,First thing comes in mind when mentioning Russia,MATRYOSHKA,1
+geo,First thing comes in mind when mentioning Russia,NESTING DOLLS,2
+geo,First thing comes in mind when mentioning Russia,VODka,1
+geo,First thing comes in mind when mentioning Russia,CAVIAR,1
+geo,First thing comes in mind when mentioning Russia,BALALAIKA,2
+geo,First thing comes in mind when mentioning Russia,USHANKA HAT,2
+geo,First thing comes in mind when mentioning Russia,FUR HAT,1
+geo,First thing comes in mind when mentioning Russia,COLD WINTER,1
+geo,First thing comes in mind when mentioning Russia,SNOW AND ICE,1
+geo,First thing comes in mind when mentioning Russia,TRANS SIBERIAN,2
+geo,First thing comes in mind when mentioning Russia,ST BASIL CATHEDRAL,2
+geo,First thing comes in mind when mentioning Russia,BALLET DANCE,2
+geo,First thing comes in mind when mentioning Russia,BOLSHOI THEATRE,3
+geo,First thing comes in mind when mentioning Russia,VLADIMIR PUTIN,2
+geo,First thing comes in mind when mentioning Russia,SOVIET UNION,2
+geo,First thing comes in mind when mentioning Russia,SPUTNIK SATELLITE,3
+geo,First thing comes in mind when mentioning Russia,RUSSIAN DOLPHIN,3
+geo,First thing comes in mind when mentioning Russia,BORSCH SOUP,2
+geo,First thing comes in mind when mentioning Russia,PELMENI DUMPLINGS,2
+geo,First thing comes in mind when mentioning Russia,BLACK SEA,2
+geo,First thing comes in mind when mentioning Russia,URAL MOUNTAINS,2
+geo,First thing comes in mind when mentioning Russia,TASS AGENCY,3
+geo,First thing comes in mind when mentioning Russia,VAST LAND,2
+geo,First thing comes in mind when mentioning Russia,TCHAIKOVSKY,3
+geo,First thing comes in mind when mentioning Russia,RED SQUARE AND KREMLIN,3

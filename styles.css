@@ -609,6 +609,7 @@ button:focus-visible {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  width: 100%;
   min-height: calc(var(--tile) * 1.4);
   padding: 4px 0;
 }

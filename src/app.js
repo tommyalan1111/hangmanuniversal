@@ -224,12 +224,18 @@
 
     function addChunk(chunk) {
       if (!chunk.length) return;
-      var extra = row.length ? gap + tile * TILE_SPACE_RATIO : 0;
+      /* a word boundary costs two flex gaps (word-space and space-word) plus the
+         blank tile itself; forgetting one of them made rows overflow by 6px */
+      var boundary = row.length ? gap + tile * TILE_SPACE_RATIO + gap : 0;
       var chunkWidth = wordWidth(chunk.length, tile, gap);
-      if (row.length && used + extra + chunkWidth > width) startRow();
-      if (row.length) { row.push(spaceToken); used += gap + tile * TILE_SPACE_RATIO; }
+
+      if (row.length && used + boundary + chunkWidth > width) {
+        startRow();
+        boundary = 0;
+      }
+      if (row.length) { row.push(spaceToken); }
       chunk.forEach(function (token) { row.push(token); });
-      used += chunkWidth;
+      used += boundary + chunkWidth;
     }
 
     words.forEach(function (letters) {
@@ -306,7 +312,8 @@
   function renderSlots(newLetters) {
     var el = $('play-slots');
     var tokens = C.mask(session.question.answer, session.guessed);
-    var width = el.clientWidth || 324;
+    var board = el.parentElement;
+    var width = (board ? board.clientWidth : el.clientWidth) || 324;
     var plan = layoutSlots(tokens, width);
 
     el.style.setProperty('--tile', plan.tile + 'px');

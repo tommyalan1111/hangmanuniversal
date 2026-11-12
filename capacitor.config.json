@@ -9,5 +9,15 @@
   },
   "server": {
     "androidScheme": "https"
+  },
+  
+  "plugins": {
+    "AdMob": {
+      "testingMode": true
+    }
   }
+
+  
 }
+
+

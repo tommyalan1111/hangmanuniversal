@@ -11,7 +11,7 @@ install! 'cocoapods', :disable_input_output_paths => true
 def capacitor_pods
   pod 'Capacitor', :path => '../../node_modules/@capacitor/ios'
   pod 'CapacitorCordova', :path => '../../node_modules/@capacitor/ios'
-
+  pod 'CapacitorCommunityAdmob', :path => '../../node_modules/@capacitor-community/admob'
 end
 
 target 'App' do
@@ -22,8 +22,13 @@ end
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+      # Ép deployment target tối thiểu lên iOS 13.0 cho tất cả các pod
+      current_target = config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f
+      if current_target < 13.0
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+      end
     end
   end
 end
+
 

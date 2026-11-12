@@ -124,6 +124,11 @@
     $('btn-level').textContent = save.level;
     $('btn-sound').textContent = 'Sound: ' + (save.sound ? 'on' : 'off');
     $('btn-sound').setAttribute('aria-pressed', String(save.sound));
+    // Ẩn nút Remove Ads nếu đã mua rồi
+    var removeAdsBtn = $('btn-remove-ads');
+    if (removeAdsBtn && window.HangmanAds && window.HangmanAds.isRemoved()) {
+      removeAdsBtn.style.display = 'none';
+    }
     updateCoins();
   }
 
@@ -507,6 +512,11 @@
       sfx.win();
       buzz([12, 40, 12]);
       confetti();
+
+      // Gọi kiểm tra hiện interstitial ad sau mỗi 3 màn chơi hoàn thành
+      if (window.HangmanAds) {
+        window.HangmanAds.checkInterstitial();
+      }
     } else {
       save.streak = 0;
       sfx.lose();
@@ -722,6 +732,13 @@
   buildKeypad();
   renderHome();
   updateCoins();
+
+  // Khởi tạo AdMob và hiển thị banner ở mép dưới cho tất cả màn hình
+  if (window.HangmanAds) {
+    window.HangmanAds.init().then(function() {
+      window.HangmanAds.showBanner();
+    });
+  }
 
   /* deep links, handy while building and for future in-app links */
   if (location.hash === '#play') startLevel(save.level);

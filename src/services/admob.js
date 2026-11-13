@@ -2,6 +2,25 @@
   'use strict';
 
   var AD_STATE_KEY = 'hangman-universal:no-ads';
+  var LEVEL_COUNT_KEY = 'hangman-universal:level-count';
+
+  /*
+   * Real ad unit IDs. The application ID lives in AndroidManifest.xml /
+   * Info.plist and must belong to the same AdMob account.
+   */
+  var BANNER_AD_ID = 'ca-app-pub-1345063149639557/6723912675';
+  var INTERSTITIAL_AD_ID = 'ca-app-pub-1345063149639557/1925067474';
+  var REWARDED_AD_ID = 'ca-app-pub-1345063149639557/8946092191';
+
+  // Keep the WebView content above the native banner. The AdMob banner is a
+  // native view drawn on top of the WebView, so only CSS padding can move the
+  // game out from under it.
+  var FALLBACK_BANNER_HEIGHT = 50;
+  var bannerSizeHandle = null;
+
+  function adsPlugin() {
+    return (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.AdMob) || null;
+  }
 
   function isAdsRemoved() {
     try {
@@ -11,84 +30,162 @@
     }
   }
 
+  function setBannerSpace(height) {
+    var h = Math.max(0, Number(height) || 0);
+    document.documentElement.style.setProperty('--ad-banner-height', h + 'px');
+    document.body.classList.toggle('has-banner', h > 0);
+  }
+
   async function initAdMob() {
-    if (isAdsRemoved()) return;
+    if (isAdsRemoved()) return false;
+    var AdMob = adsPlugin();
+    if (!AdMob) return false;
     try {
-      if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.AdMob) {
-        var AdMob = window.Capacitor.Plugins.AdMob;
-        await AdMob.initialize({
-          requestTrackingAuthorization: true,
-          initializeForTesting: true,
-        });
-      }
+      await AdMob.initialize({
+        requestTrackingAuthorization: true,
+        initializeForTesting: false
+      });
+      return true;
     } catch (e) {
       console.error('AdMob init error:', e);
+      return false;
     }
   }
 
-  // 1. Hiển thị Banner ở mép dưới
+  /* 1. Banner at the bottom of every screen */
   async function showBanner() {
-    if (isAdsRemoved()) return;
+    if (isAdsRemoved()) return false;
+    var AdMob = adsPlugin();
+    if (!AdMob) return false;
+
     try {
-      if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.AdMob) {
-        var AdMob = window.Capacitor.Plugins.AdMob;
-        await AdMob.showBanner({
-          adId: 'ca-app-pub-3940256099942544/6300978111', // Test Banner ID
-          position: 'BOTTOM_CENTER',
-          size: 'BANNER',
-          margin: 0,
-          reload: true
+      if (!bannerSizeHandle) {
+        bannerSizeHandle = await AdMob.addListener('bannerAdSizeChanged', function (size) {
+          setBannerSpace(size && size.height);
         });
       }
+
+      await AdMob.showBanner({
+        adId: BANNER_AD_ID,
+        position: 'BOTTOM_CENTER',
+        // "size" is not a valid option (it is silently ignored and the plugin
+        // falls back to ADAPTIVE_BANNER, which is taller and covers the keys).
+        adSize: 'BANNER',
+        margin: 0,
+        isTesting: false
+      });
+
+      // Reserve the space right away; the size event above refines it once the
+      // SDK reports the real banner height (0 removes the gap again).
+      setBannerSpace(FALLBACK_BANNER_HEIGHT);
+      return true;
     } catch (e) {
       console.error('Show banner error:', e);
+      setBannerSpace(0);
+      return false;
     }
   }
 
   async function hideBanner() {
+    var AdMob = adsPlugin();
     try {
-      if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.AdMob) {
-        await window.Capacitor.Plugins.AdMob.hideBanner();
-      }
+      if (AdMob) await AdMob.hideBanner();
     } catch (e) {
       console.error('Hide banner error:', e);
     }
+    setBannerSpace(0);
   }
 
-  // 2. Interstitial Ad sau mỗi 3 màn chơi
+  /* 2. Interstitial after every 3 completed levels */
   async function showInterstitialAfterThreeLevels() {
     if (isAdsRemoved()) return;
 
+    var count = 0;
     try {
-      var countKey = 'hangman-universal:level-count';
-      var currentCount = parseInt(localStorage.getItem(countKey) || '0', 10) + 1;
+      count = parseInt(localStorage.getItem(LEVEL_COUNT_KEY) || '0', 10) + 1;
+      localStorage.setItem(LEVEL_COUNT_KEY, count >= 3 ? '0' : String(count));
+    } catch (e) {
+      return;
+    }
+    if (count < 3) return;
 
-      if (currentCount >= 3) {
-        if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.AdMob) {
-          var AdMob = window.Capacitor.Plugins.AdMob;
-          await AdMob.prepareInterstitial({
-            adId: 'ca-app-pub-3940256099942544/1033173712', // Test Interstitial ID
-            isTesting: true
-          });
-          await AdMob.showInterstitial();
-        }
-        localStorage.setItem(countKey, '0');
-      } else {
-        localStorage.setItem(countKey, currentCount.toString());
-      }
+    var AdMob = adsPlugin();
+    if (!AdMob) return;
+
+    try {
+      await AdMob.prepareInterstitial({
+        adId: INTERSTITIAL_AD_ID,
+        isTesting: false
+      });
+      await AdMob.showInterstitial();
     } catch (e) {
       console.error('Show interstitial error:', e);
     }
   }
 
-  // 3. Mua gói Remove Ads ($1.99)
+  /* 3. Remove ads state */
   function setAdsRemoved(purchased) {
     try {
       localStorage.setItem(AD_STATE_KEY, purchased ? 'true' : 'false');
-      if (purchased) {
-        hideBanner();
+    } catch (e) {
+      /* private mode */
+    }
+    if (purchased) hideBanner();
+  }
+
+  /*
+   * 4. Rewarded ad. Resolves true only when the player actually earned the
+   * reward, false when they dismissed the video early or the ad failed.
+   */
+  async function showRewardedAd() {
+    var AdMob = adsPlugin();
+    if (!AdMob) {
+      // Plain browser/dev build: no native SDK, let the flow be tested.
+      return true;
+    }
+
+    return new Promise(function (resolve) {
+      var settled = false;
+      var handles = [];
+
+      function finish(earned) {
+        if (settled) return;
+        settled = true;
+        handles.forEach(function (handle) {
+          try { handle.remove(); } catch (e) { /* already gone */ }
+        });
+        resolve(earned);
       }
-    } catch (e) {}
+
+      (async function () {
+        try {
+          handles.push(await AdMob.addListener('onRewardedVideoAdReward', function () {
+            finish(true);
+          }));
+          handles.push(await AdMob.addListener('onRewardedVideoAdDismissed', function () {
+            finish(false);
+          }));
+          handles.push(await AdMob.addListener('onRewardedVideoAdFailedToShow', function () {
+            finish(false);
+          }));
+
+          await AdMob.prepareRewardVideoAd({
+            adId: REWARDED_AD_ID,
+            isTesting: false
+          });
+
+          // Do not await this promise: the native plugin only resolves it when
+          // a reward is earned, so dismissing early would leave it pending.
+          AdMob.showRewardVideoAd().catch(function (e) {
+            console.error('Show rewarded ad error:', e);
+            finish(false);
+          });
+        } catch (e) {
+          console.error('Prepare rewarded ad error:', e);
+          finish(false);
+        }
+      })();
+    });
   }
 
   window.HangmanAds = {
@@ -96,6 +193,7 @@
     showBanner: showBanner,
     hideBanner: hideBanner,
     checkInterstitial: showInterstitialAfterThreeLevels,
+    showRewarded: showRewardedAd,
     setRemoved: setAdsRemoved,
     isRemoved: isAdsRemoved
   };

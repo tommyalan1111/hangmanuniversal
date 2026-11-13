@@ -410,7 +410,11 @@
     renderGallows();
     updateCoins();
 
-    $('btn-hint').disabled = session.state !== 'playing' || save.coins < C.HINT_COST;
+    var hintBtn = $('btn-hint-coins');
+    if (hintBtn) hintBtn.disabled = session.state !== 'playing' || save.coins < C.HINT_COST;
+
+    var freeHintBtn = $('btn-free-hint');
+    if (freeHintBtn) freeHintBtn.disabled = session.state !== 'playing';
   }
 
   /* ------------------------------------------------------------- game flow */
@@ -487,6 +491,48 @@
     var state = C.status(session.question.answer, session.guessed);
     if (state === 'won') finish(true);
     else if (state === 'lost') finish(false);
+  }
+
+  // Xem quảng cáo thưởng (rewarded) để mở miễn phí một chữ cái
+  async function useFreeHint() {
+    if (!session || session.state !== 'playing') return;
+
+    if (!window.HangmanAds || !window.HangmanAds.showRewarded) {
+      toast('Ads are not available right now');
+      return;
+    }
+
+    var btn = $('btn-free-hint');
+    if (btn) btn.disabled = true;
+
+    var earned = false;
+    try {
+      earned = await window.HangmanAds.showRewarded();
+    } catch (err) {
+      earned = false;
+    }
+
+    // The player may have left the round while the ad was on screen.
+    if (earned && session && session.state === 'playing') {
+      var letter = C.hintLetter(session.question.answer, session.guessed);
+      if (letter) {
+        session.guessed.add(letter);
+        session.helped = true;
+        persist();
+
+        sfx.hit();
+        toast('Free Hint Revealed ' + letter + ' 🎁');
+        renderPlay([letter]);
+
+        var state = C.status(session.question.answer, session.guessed);
+        if (state === 'won') finish(true);
+        else if (state === 'lost') finish(false);
+      }
+    } else if (!earned) {
+      toast('Watch the whole video to earn the free hint');
+    }
+
+    if (btn) btn.disabled = !session || session.state !== 'playing';
   }
 
   function finish(won) {
@@ -673,6 +719,21 @@
     showScreen('screen-home');
   }
 
+  /*
+   * Android hardware back / edge-swipe back. @capacitor/app turns the system
+   * gesture into a backButton event. Inside the game we walk back to Home;
+   * only on Home do we let the app close.
+   */
+  function handleNativeBack() {
+    if (!$('overlay').hidden || !$('screen-home').classList.contains('is-active')) {
+      goHome();
+      return;
+    }
+    if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App) {
+      window.Capacitor.Plugins.App.exitApp();
+    }
+  }
+
   /* ------------------------------------------------------------------- wire */
 
   $('btn-continue').addEventListener('click', function () { startLevel(save.level); });
@@ -682,7 +743,12 @@
   });
   $('btn-daily').addEventListener('click', startDaily);
   $('btn-help').addEventListener('click', showHelp);
-  $('btn-hint').addEventListener('click', useHint);
+  $('btn-hint-coins').addEventListener('click', useHint);
+  $('btn-free-hint').addEventListener('click', useFreeHint);
+
+  if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App) {
+    window.Capacitor.Plugins.App.addListener('backButton', handleNativeBack);
+  }
 
   $('btn-sound').addEventListener('click', function () {
     save.sound = !save.sound;

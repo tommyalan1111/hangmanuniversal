@@ -29,6 +29,9 @@
   --font-body: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system,
     "Helvetica Neue", Arial, sans-serif;
   --font-mono: "Cascadia Mono", "Consolas", ui-monospace, monospace;
+
+  /* Live height of the native AdMob banner (set by src/services/admob.js). */
+  --ad-banner-height: 0px;
 }
 
 * { box-sizing: border-box; }
@@ -92,6 +95,12 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+
+body.has-banner .app {
+  /* The banner is a native overlay above the WebView, so reserve exactly its
+     measured height instead of a hard-coded 130px. */
+  padding-bottom: calc(18px + var(--ad-banner-height, 50px) + env(safe-area-inset-bottom, 0px));
 }
 
 .screen {
@@ -982,3 +991,4 @@ button:focus-visible {
     transition-duration: 0.001ms !important;
   }
 }
+

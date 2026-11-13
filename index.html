@@ -105,7 +105,7 @@
     </div>
 
     <div class="clue-card">
-      <svg class="gallows" viewBox="0 0 120 140" aria-hidden="Type">
+      <svg class="gallows" viewBox="0 0 120 140" aria-hidden="true">
         <g class="frame">
           <path d="M34 126V14h58"/>
           <path d="M34 32l18-18"/>
@@ -128,12 +128,20 @@
 
     <div class="keypad" id="keypad"></div>
 
-    <div class="play-actions">
-      <button class="hint-btn" id="btn-hint">
-        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5V15h8v-1.5A6 6 0 0 0 12 3z"/></svg>
-        Hint · 30 coins
-      </button>
-    </div>
+    <div class="play-actions" style="display: flex; justify-content: space-between; gap: 10px;">
+  <!-- Nút 1: Trừ 30 coins -->
+  <button class="hint-btn" id="btn-hint-coins" style="flex: 1;">
+    <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5V15h8v-1.5A6 6 0 0 0 12 3z"/></svg>
+    Hint · 30 coins
+  </button>
+
+  <!-- Nút 2: Free Hint xem quảng cáo -->
+  <button class="hint-btn" id="btn-free-hint" style="flex: 1; background-color: #2b5d44;">
+    <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+    Free Hint 🎁
+  </button>
+</div>
+
   </section>
 
 </main>
@@ -147,6 +155,7 @@
 <script src="data/questions.generated.js"></script>
 <script src="data/questions.js"></script>
 <script src="src/core.js"></script>
+<script src="src/services/admob.js"></script>
 <script src="src/app.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@
   // Keep the WebView content above the native banner. The AdMob banner is a
   // native view drawn on top of the WebView, so only CSS padding can move the
   // game out from under it.
-  var FALLBACK_BANNER_HEIGHT = 50;
+  var FALLBACK_BANNER_HEIGHT = 56;
   var bannerSizeHandle = null;
 
   function adsPlugin() {
@@ -68,9 +68,9 @@
       await AdMob.showBanner({
         adId: BANNER_AD_ID,
         position: 'BOTTOM_CENTER',
-        // "size" is not a valid option (it is silently ignored and the plugin
-        // falls back to ADAPTIVE_BANNER, which is taller and covers the keys).
-        adSize: 'BANNER',
+        // Full-width anchored banner. "size" is not a valid option and is
+        // silently ignored by the plugin.
+        adSize: 'ADAPTIVE_BANNER',
         margin: 0,
         isTesting: false
       });

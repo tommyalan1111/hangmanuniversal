@@ -135,8 +135,8 @@
     var lives = typeof o.livesLeft === 'number' ? o.livesLeft : MAX_LIVES;
     var difficulty = typeof o.difficulty === 'number' ? o.difficulty : 1;
     var streak = typeof o.streak === 'number' ? o.streak : 0;
-    var base = 20;
-    var lifeBonus = lives * 5;
+    var base = 10;
+    var lifeBonus = lives; // 1 coin per remaining life
     var diffBonus = (difficulty - 1) * 10;
     var streakBonus = Math.min(streak, 5) * 3;
     var perfect = lives === MAX_LIVES ? 15 : 0;

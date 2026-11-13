@@ -96,7 +96,7 @@ test('coins grow with lives, difficulty and streak', () => {
   assert.ok(strong.total > weak.total);
   assert.equal(weak.perfect, 0);
   assert.equal(strong.perfect, 15);
-  assert.equal(weak.total, 25);
+  assert.equal(weak.total, 11);
 });
 
 test('level order is deterministic and covers every question', () => {

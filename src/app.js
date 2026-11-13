@@ -108,6 +108,12 @@
       screens[i].classList.toggle('is-active', screens[i].id === id);
     }
     window.scrollTo(0, 0);
+    // With the ad banner visible the app itself is the scroll container, so
+    // reset it too; otherwise a new screen can open halfway down.
+    var app = document.getElementById('app');
+    if (app) app.scrollTop = 0;
+    var catList = document.getElementById('cat-list');
+    if (catList) catList.scrollTop = 0;
   }
 
   function updateCoins() {
@@ -596,13 +602,14 @@
   function showWin(reward, wrong) {
     var q = session.question;
     var cat = DATA.categoryById[q.category] || { name: q.category };
+    var livesLeft = C.MAX_LIVES - wrong;
     openOverlay(
       '<p class="sheet-kicker">' + cat.name + ' · difficulty ' + q.difficulty + '/3</p>' +
       '<h2 id="sheet-title">WELL DONE!</h2>' +
       '<p class="sheet-answer' + (q.answer.length > 18 ? ' is-long' : '') + '"><small>Answer</small>' + q.answer + '</p>' +
       '<div class="rows">' +
         '<div class="row"><span>Base reward</span><b>+' + reward.base + '</b></div>' +
-        '<div class="row"><span>Lives left ×5</span><b>+' + reward.lives + '</b></div>' +
+        '<div class="row"><span>Lives left (' + livesLeft + ')</span><b>+' + reward.lives + '</b></div>' +
         '<div class="row"><span>Difficulty</span><b>+' + reward.difficulty + '</b></div>' +
         '<div class="row"><span>Streak ' + save.streak + '</span><b>+' + reward.streak + '</b></div>' +
         (reward.perfect ? '<div class="row"><span>Perfect round</span><b>+' + reward.perfect + '</b></div>' : '') +
@@ -746,6 +753,10 @@
   $('btn-hint-coins').addEventListener('click', useHint);
   $('btn-free-hint').addEventListener('click', useFreeHint);
 
+  if (window.HangmanBilling) {
+    window.HangmanBilling.attach($('btn-remove-ads'));
+  }
+
   if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App) {
     window.Capacitor.Plugins.App.addListener('backButton', handleNativeBack);
   }
@@ -806,6 +817,11 @@
     });
   }
 
+  // Khôi phục trạng thái Remove Ads đã mua (nếu có)
+  if (window.HangmanBilling) {
+    window.HangmanBilling.init();
+  }
+
   /* deep links, handy while building and for future in-app links */
   if (location.hash === '#play') startLevel(save.level);
   else if (location.hash === '#categories') { renderCategories(); showScreen('screen-categories'); }
@@ -820,7 +836,8 @@
     },
     startLevel: startLevel,
     startDaily: startDaily,
-    poolSize: pool.length
+    poolSize: pool.length,
+    toast: toast
   };
 
   /* used by tools/shoot.mjs to drive the board without knowing the bank */

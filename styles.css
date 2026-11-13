@@ -97,10 +97,52 @@ button:focus-visible {
   gap: 14px;
 }
 
+/*
+ * The native AdMob banner is drawn on top of the WebView. When it is visible,
+ * keep the app's scroll area above it (banner height + system navigation bar)
+ * so no screen, sheet or list item is ever hidden under the ad.
+ */
 body.has-banner .app {
-  /* The banner is a native overlay above the WebView, so reserve exactly its
-     measured height instead of a hard-coded 130px. */
-  padding-bottom: calc(18px + var(--ad-banner-height, 50px) + env(safe-area-inset-bottom, 0px));
+  height: calc(100dvh - var(--ad-banner-height, 56px) - max(env(safe-area-inset-bottom, 0px), 24px));
+  min-height: 0;
+  padding-bottom: 18px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+body.has-banner .overlay {
+  padding-bottom: calc(var(--ad-banner-height, 56px) + max(env(safe-area-inset-bottom, 0px), 24px));
+}
+
+body.has-banner .sheet {
+  max-height: calc(100dvh - var(--ad-banner-height, 56px) - max(env(safe-area-inset-bottom, 0px), 24px) - 10px);
+  padding-bottom: 18px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+body.has-banner .toast {
+  bottom: calc(var(--ad-banner-height, 56px) + max(env(safe-area-inset-bottom, 0px), 24px) + 20px);
+}
+
+/* Compact play layout while the banner takes the bottom strip. */
+body.has-banner #screen-play { gap: 8px; }
+body.has-banner #screen-play .clue-card {
+  grid-template-columns: 86px 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+body.has-banner #screen-play .gallows { width: 86px; height: 98px; }
+body.has-banner #screen-play .board { min-height: 56px; }
+body.has-banner #screen-play .key { height: clamp(38px, 10.2vw, 46px); }
+body.has-banner #screen-play .hint-btn { height: 44px; }
+
+/* When the app is the scroll container, the topic list must not create a
+   second, nested scroll area (it traps the gesture and hides the header). */
+body.has-banner .cat-list {
+  overflow-y: visible;
 }
 
 .screen {

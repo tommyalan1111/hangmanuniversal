@@ -24,9 +24,10 @@ Generated from the current build (viewport 450×800 @2.4x, file:// build).
 
 - The app currently has **21 topics** and **7,384 questions** (shown on the
   categories screen and home stats).
-- The "Remove Ads ($1.99)" button is hidden in these screenshots because the
-  purchase flow is not implemented yet. Hide it in the build before publishing,
-  or implement Google Play Billing.
+- "Remove Ads" is implemented with Google Play Billing (one-time product ID
+  `remove_ads`). The button is hidden in these screenshots; on a real build it
+  appears only after the product loads successfully, showing the localized
+  Play price.
 - Screenshots are raw app screens (no device frame, no marketing text).
 - Regenerate after UI changes: capture at 450×800 @2.4x, or resize to
   1080×1920 keeping the 9:16 ratio.

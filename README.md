@@ -187,7 +187,7 @@ Icon đang dùng là SVG stroke `currentColor` nên tự ăn màu `tint`.
 
 - Số mạng: `MAX_LIVES` trong `src/core.js` (mặc định 6)
 - Giá gợi ý: `HINT_COST` (mặc định 30)
-- Công thức thưởng: `coinsForWin()` — nền 20, mỗi mạng +5, độ khó +10/bậc,
+- Công thức thưởng: `coinsForWin()` — nền 10, mỗi mạng +1, độ khó +10/bậc,
   chuỗi +3 (tối đa 5 chuỗi), thắng không sai chữ nào +15
 - Thứ tự màn: `buildLevelOrder()` xếp câu dễ trước, trộn đều chủ đề,
   có bước làm mượt để không lặp chủ đề liền nhau. Seed cố định nên mọi người

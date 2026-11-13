@@ -5,6 +5,8 @@
 (function () {
   'use strict';
 
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
   var C = window.HMCore;
   var DATA = window.HangmanData;
   var SAVE_KEY = 'hangman-universal:v1';
@@ -102,18 +104,24 @@
 
   /* ------------------------------------------------------------------ views */
 
+  function resetScreenScroll() {
+    window.scrollTo(0, 0);
+    var app = document.getElementById('app');
+    if (app) app.scrollTop = 0;
+    var catList = document.getElementById('cat-list');
+    if (catList) catList.scrollTop = 0;
+  }
+
   function showScreen(id) {
     var screens = document.querySelectorAll('.screen');
     for (var i = 0; i < screens.length; i++) {
       screens[i].classList.toggle('is-active', screens[i].id === id);
     }
-    window.scrollTo(0, 0);
-    // With the ad banner visible the app itself is the scroll container, so
-    // reset it too; otherwise a new screen can open halfway down.
-    var app = document.getElementById('app');
-    if (app) app.scrollTop = 0;
-    var catList = document.getElementById('cat-list');
-    if (catList) catList.scrollTop = 0;
+    resetScreenScroll();
+    // Late banner sizing / WebView scroll anchoring can move the new screen
+    // again; pin it to the top once the layout has settled.
+    window.requestAnimationFrame(resetScreenScroll);
+    window.setTimeout(resetScreenScroll, 80);
   }
 
   function updateCoins() {

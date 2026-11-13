@@ -22,7 +22,7 @@ npm start          # http://localhost:5173
 | Phần | Nội dung |
 | --- | --- |
 | Ngôn ngữ | Tiếng Anh toàn bộ (câu hỏi lẫn giao diện) |
-| Nội dung | 6.532 câu hỏi, 14 chủ đề, 3 mức độ (401 viết tay + 6.131 sinh từ Wikidata) |
+| Nội dung | 7.287 câu hỏi, 21 chủ đề, 3 mức độ (4.506 câu curated + 2.781 sinh từ Wikidata) |
 | Chế độ | Màn chơi tăng dần, chọn chủ đề, thử thách hằng ngày |
 | Luật | 6 mạng, sai 6 lần là thua, đúng hết là thắng |
 | Kinh tế | Thưởng xu theo mạng còn lại, độ khó, chuỗi thắng; gợi ý giá 30 xu |
@@ -38,8 +38,8 @@ index.html            # 3 màn hình: home / chủ đề / chơi + overlay kết
 styles.css            # toàn bộ theme, biến màu ở :root
 src/core.js           # logic thuần: mask, mạng, xu, thứ tự màn, daily seed
 src/app.js            # UI, sự kiện, lưu trữ, âm thanh
-data/questions.js     # 401 câu viết tay + 14 chủ đề (kèm icon SVG)
-data/questions.generated.js  # 6.131 câu sinh tự động (file build ra, đừng sửa tay)
+data/questions.js     # 4.506 câu curated + 21 chủ đề (kèm icon SVG)
+data/questions.generated.js  # 2.781 câu sinh tự động (file build ra, đừng sửa tay)
 tools/generate.mjs    # sinh ngân hàng câu hỏi từ Wikidata (CC0)
 tools/validate.mjs    # kiểm tra dữ liệu trước khi phát hành
 tools/long-answer-check.mjs  # đo bố cục với đáp án 9/13/23/25 ký tự
@@ -112,7 +112,7 @@ Công cụ sẽ:
 3. **không ghi gì cả** nếu có dòng lỗi (trừ khi thêm `--force` để chỉ nhập dòng hợp lệ)
 4. backup `data/questions.js` vào `.backup/` rồi mới ghi, sau đó tự chạy lại validator
 
-## Ngân hàng sinh tự động (6.131 câu)
+## Ngân hàng sinh tự động (2.781 câu)
 
 `data/questions.generated.js` được sinh từ **Wikidata (CC0)** bằng
 `tools/generate.mjs` — dữ liệu kiện, không phải văn bản có bản quyền.
@@ -195,7 +195,7 @@ Icon đang dùng là SVG stroke `currentColor` nên tự ăn màu `tint`.
 
 ## Ghi chú về nội dung
 
-Toàn bộ 395 câu trong repo này được viết mới cho dự án, không sao chép từ
+Phần câu hỏi curated trong repo này được viết mới cho dự án, không sao chép từ
 ứng dụng nào trên Play Store. Cơ chế chơi hangman là phổ quát, nhưng câu hỏi,
 thứ tự màn, hình vẽ và âm thanh của app khác là tài sản có bản quyền — dùng lại
 sẽ dính DMCA và có thể bị khoá tài khoản developer.

@@ -16,7 +16,12 @@
   // native view drawn on top of the WebView, so only CSS padding can move the
   // game out from under it.
   var FALLBACK_BANNER_HEIGHT = 56;
-  var bannerSizeHandle = null;
+  var bannerListenersReady = false;
+  var bannerWanted = false;
+  var bannerLoading = false;
+  var bannerLoaded = false;
+  var bannerRetryTimer = null;
+  var bannerRetryDelay = 5000;
 
   function adsPlugin() {
     return (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.AdMob) || null;
@@ -52,18 +57,78 @@
     }
   }
 
+  function clearBannerRetry() {
+    if (bannerRetryTimer) {
+      window.clearTimeout(bannerRetryTimer);
+      bannerRetryTimer = null;
+    }
+  }
+
+  function scheduleBannerRetry(immediate) {
+    if (!bannerWanted || bannerLoaded || isAdsRemoved() || !adsPlugin()) return;
+    clearBannerRetry();
+    var delay = immediate ? 1000 : bannerRetryDelay;
+    bannerRetryDelay = Math.min(bannerRetryDelay * 2, 60000);
+    bannerRetryTimer = window.setTimeout(function () {
+      bannerRetryTimer = null;
+      if (bannerWanted && !bannerLoaded) showBanner();
+    }, delay);
+  }
+
+  function retryBannerNow() {
+    if (!bannerWanted || bannerLoaded || bannerLoading) return;
+    bannerRetryDelay = 5000;
+    clearBannerRetry();
+    showBanner();
+  }
+
+  function attachBannerListeners(AdMob) {
+    if (bannerListenersReady) return;
+    bannerListenersReady = true;
+
+    AdMob.addListener('bannerAdSizeChanged', function (size) {
+      setBannerSpace(size && size.height);
+    }).catch(function (e) { console.warn('Banner size listener error:', e); });
+
+    AdMob.addListener('bannerAdLoaded', function () {
+      bannerLoaded = true;
+      bannerRetryDelay = 5000;
+      clearBannerRetry();
+    }).catch(function (e) { console.warn('Banner loaded listener error:', e); });
+
+    AdMob.addListener('bannerAdFailedToLoad', function () {
+      bannerLoaded = false;
+      setBannerSpace(0);
+      scheduleBannerRetry();
+    }).catch(function (e) { console.warn('Banner failed listener error:', e); });
+
+    // Recover when connectivity comes back or the app returns to foreground.
+    window.addEventListener('online', retryBannerNow);
+    window.addEventListener('offline', function () {
+      bannerLoaded = false;
+    });
+    document.addEventListener('visibilitychange', function () {
+      if (!document.hidden) retryBannerNow();
+    });
+    if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App) {
+      window.Capacitor.Plugins.App.addListener('resume', retryBannerNow);
+    }
+  }
+
   /* 1. Banner at the bottom of every screen */
   async function showBanner() {
-    if (isAdsRemoved()) return false;
+    bannerWanted = true;
+    if (isAdsRemoved()) {
+      bannerWanted = false;
+      return false;
+    }
     var AdMob = adsPlugin();
     if (!AdMob) return false;
+    if (bannerLoading) return false;
 
+    bannerLoading = true;
     try {
-      if (!bannerSizeHandle) {
-        bannerSizeHandle = await AdMob.addListener('bannerAdSizeChanged', function (size) {
-          setBannerSpace(size && size.height);
-        });
-      }
+      attachBannerListeners(AdMob);
 
       await AdMob.showBanner({
         adId: BANNER_AD_ID,
@@ -75,6 +140,13 @@
         isTesting: false
       });
 
+      // hideBanner()/setRemoved() may have run while the native call was
+      // in flight; do not reserve space for a banner that is no longer wanted.
+      if (!bannerWanted || isAdsRemoved()) {
+        setBannerSpace(0);
+        return false;
+      }
+
       // Reserve the space right away; the size event above refines it once the
       // SDK reports the real banner height (0 removes the gap again).
       setBannerSpace(FALLBACK_BANNER_HEIGHT);
@@ -82,11 +154,17 @@
     } catch (e) {
       console.error('Show banner error:', e);
       setBannerSpace(0);
+      scheduleBannerRetry();
       return false;
+    } finally {
+      bannerLoading = false;
     }
   }
 
   async function hideBanner() {
+    bannerWanted = false;
+    bannerLoaded = false;
+    clearBannerRetry();
     var AdMob = adsPlugin();
     try {
       if (AdMob) await AdMob.hideBanner();

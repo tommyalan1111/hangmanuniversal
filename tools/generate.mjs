@@ -282,6 +282,9 @@ for (const type of TYPES) {
     /* systematic placeholder element names (unpentunium, unhexoctium...) are not worth asking */
     if (/^UN[A-Z]*IUM$/.test(answer)) continue;
     if (!subject || !answer) continue;
+    /* Wikidata's label service falls back to the QID when an English label is
+       missing; never turn that into a question. */
+    if (/^Q\d+$/i.test(subject) || /^Q\d+$/i.test(answer)) continue;
 
     if (!answers.has(subject)) answers.set(subject, new Set());
     answers.get(subject).add(answer);

@@ -107,6 +107,7 @@ body.has-banner .app {
   min-height: 0;
   padding-bottom: 18px;
   overflow-y: auto;
+  overflow-anchor: none;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
 }
@@ -139,10 +140,23 @@ body.has-banner #screen-play .board { min-height: 56px; }
 body.has-banner #screen-play .key { height: clamp(38px, 10.2vw, 46px); }
 body.has-banner #screen-play .hint-btn { height: 44px; }
 
-/* When the app is the scroll container, the topic list must not create a
-   second, nested scroll area (it traps the gesture and hides the header). */
-body.has-banner .cat-list {
-  overflow-y: visible;
+/* Keep the category header pinned and let only the list scroll. This avoids
+   the whole screen drifting under the banner and trapping the touch gesture
+   between two scroll containers. */
+body.has-banner #screen-categories {
+  min-height: 0;
+  overflow: hidden;
+}
+body.has-banner #screen-categories .play-head,
+body.has-banner #screen-categories .section-head {
+  flex-shrink: 0;
+}
+body.has-banner #screen-categories .cat-list {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 
 .screen {

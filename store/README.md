@@ -22,7 +22,7 @@ Generated from the current build (viewport 450×800 @2.4x, file:// build).
 
 ## Notes
 
-- The app currently has **21 topics** and **7,384 questions** (shown on the
+- The app currently has **21 topics** and **7,287 questions** (shown on the
   categories screen and home stats).
 - "Remove Ads" is implemented with Google Play Billing (one-time product ID
   `remove_ads`). The button is hidden in these screenshots; on a real build it

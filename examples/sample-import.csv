@@ -1,90 +1,91 @@
 category,question,answer,difficulty
-geo,First thing comes in mind when mentioning Portugal,PORT WINE,1
-geo,First thing comes in mind when mentioning Portugal,PASTEL DE NATA,1
-geo,First thing comes in mind when mentioning Portugal,CRISTIANO RONALDO,1
-geo,First thing comes in mind when mentioning Portugal,LISBON,1
-geo,First thing comes in mind when mentioning Portugal,PORTO,1
-geo,First thing comes in mind when mentioning Portugal,YELLOW TRAM,2
-geo,First thing comes in mind when mentioning Portugal,VASCO DA GAMA,2
-geo,First thing comes in mind when mentioning Portugal,AZULEJOS,2
-geo,First thing comes in mind when mentioning Portugal,ATLANTIC OCEAN,2
-geo,First thing comes in mind when mentioning Portugal,ALGARVE,2
-geo,First thing comes in mind when mentioning Portugal,MADEIRA WINE,2
-geo,First thing comes in mind when mentioning Portugal,FADO MUSIC,2
-geo,First thing comes in mind when mentioning Portugal,COD FISH,1
-geo,First thing comes in mind when mentioning Portugal,PERI PERI CHICKEN,2
-geo,First thing comes in mind when mentioning Portugal,SINTRA PALACE,2
-geo,First thing comes in mind when mentioning Portugal,BELEM TOWER,2
-geo,First thing comes in mind when mentioning Portugal,CORK OAK,3
-geo,First thing comes in mind when mentioning Portugal,ROSA DOS VENTOS,3
-geo,First thing comes in mind when mentioning Portugal,EUROPEAN SUNSET,2
-geo,First thing comes in mind when mentioning Portugal,SURFING WAVES,2
-geo,First thing comes in mind when mentioning Portugal,NAZARE WAVES,3
-geo,First thing comes in mind when mentioning Portugal,SEAFOOD RICE,2
-geo,First thing comes in mind when mentioning Portugal,PORTUGUESE TART,1
-geo,First thing comes in mind when mentioning Portugal,GOLDEN BEACHES,2
-geo,First thing comes in mind when mentioning Portugal,HISTORIC CASTLES,2
-geo,First thing comes in mind when mentioning Portugal,FRIENDLY PEOPLE,2
-geo,First thing comes in mind when mentioning Portugal,OLD TRAMWAY,2
-geo,First thing comes in mind when mentioning Portugal,OCEAN VIEW,1
-geo,First thing comes in mind when mentioning Portugal,EUROPE WEST COAST,3
-geo,First thing comes in mind when mentioning Portugal,CRISTIANO AND PORTO,3
-geo,First thing comes in mind when mentioning Israel,JERUSALEM,1
-geo,First thing comes in mind when mentioning Israel,TEL AVIV,1
-geo,First thing comes in mind when mentioning Israel,THE DEAD SEA,1
-geo,First thing comes in mind when mentioning Israel,WAILING WALL,2
-geo,First thing comes in mind when mentioning Israel,HOLY LAND,1
-geo,First thing comes in mind when mentioning Israel,DESERT,1
-geo,First thing comes in mind when mentioning Israel,KIBBUTZ,2
-geo,First thing comes in mind when mentioning Israel,START UP NATION,2
-geo,First thing comes in mind when mentioning Israel,MEDITERRANEAN SEA,2
-geo,First thing comes in mind when mentioning Israel,FALAFEL,1
-geo,First thing comes in mind when mentioning Israel,HUMMUS,1
-geo,First thing comes in mind when mentioning Israel,SHAKSHUKA,2
-geo,First thing comes in mind when mentioning Israel,ISRAELI SALAD,2
-geo,First thing comes in mind when mentioning Israel,DOMED ROCK,2
-geo,First thing comes in mind when mentioning Israel,CHURCH OF NATIVITY,3
-geo,First thing comes in mind when mentioning Israel,BIRTHPLACE OF JESUS,3
-geo,First thing comes in mind when mentioning Israel,ANCIENT HISTORY,2
-geo,First thing comes in mind when mentioning Israel,HIGH TECH HUBS,2
-geo,First thing comes in mind when mentioning Israel,MASADA FORTRESS,3
-geo,First thing comes in mind when mentioning Israel,SEA OF GALILEE,2
-geo,First thing comes in mind when mentioning Israel,NEGEV DESERT,2
-geo,First thing comes in mind when mentioning Israel,TEL AVIV BEACH,2
-geo,First thing comes in mind when mentioning Israel,IRON DOME,2
-geo,First thing comes in mind when mentioning Israel,TAHINI,2
-geo,First thing comes in mind when mentioning Israel,PITA BREAD,1
-geo,First thing comes in mind when mentioning Israel,KOSHER FOOD,2
-geo,First thing comes in mind when mentioning Israel,ANCIENT RUINS,2
-geo,First thing comes in mind when mentioning Israel,HISTORIC SITE,2
-geo,First thing comes in mind when mentioning Israel,JERUSALEM AND SEA,3
-geo,First thing comes in mind when mentioning Russia,MOSCOW,1
-geo,First thing comes in mind when mentioning Russia,SAINT PETERSBURG,2
-geo,First thing comes in mind when mentioning Russia,RED SQUARE,1
-geo,First thing comes in mind when mentioning Russia,KREMLIN,1
-geo,First thing comes in mind when mentioning Russia,SIBERIA,1
-geo,First thing comes in mind when mentioning Russia,MATRYOSHKA,1
-geo,First thing comes in mind when mentioning Russia,NESTING DOLLS,2
-geo,First thing comes in mind when mentioning Russia,VODka,1
-geo,First thing comes in mind when mentioning Russia,CAVIAR,1
-geo,First thing comes in mind when mentioning Russia,BALALAIKA,2
-geo,First thing comes in mind when mentioning Russia,USHANKA HAT,2
-geo,First thing comes in mind when mentioning Russia,FUR HAT,1
-geo,First thing comes in mind when mentioning Russia,COLD WINTER,1
-geo,First thing comes in mind when mentioning Russia,SNOW AND ICE,1
-geo,First thing comes in mind when mentioning Russia,TRANS SIBERIAN,2
-geo,First thing comes in mind when mentioning Russia,ST BASIL CATHEDRAL,2
-geo,First thing comes in mind when mentioning Russia,BALLET DANCE,2
-geo,First thing comes in mind when mentioning Russia,BOLSHOI THEATRE,3
-geo,First thing comes in mind when mentioning Russia,VLADIMIR PUTIN,2
-geo,First thing comes in mind when mentioning Russia,SOVIET UNION,2
-geo,First thing comes in mind when mentioning Russia,SPUTNIK SATELLITE,3
-geo,First thing comes in mind when mentioning Russia,RUSSIAN DOLPHIN,3
-geo,First thing comes in mind when mentioning Russia,BORSCH SOUP,2
-geo,First thing comes in mind when mentioning Russia,PELMENI DUMPLINGS,2
-geo,First thing comes in mind when mentioning Russia,BLACK SEA,2
-geo,First thing comes in mind when mentioning Russia,URAL MOUNTAINS,2
-geo,First thing comes in mind when mentioning Russia,TASS AGENCY,3
-geo,First thing comes in mind when mentioning Russia,VAST LAND,2
-geo,First thing comes in mind when mentioning Russia,TCHAIKOVSKY,3
-geo,First thing comes in mind when mentioning Russia,RED SQUARE AND KREMLIN,3
+movies,Name a famous wizard or witch,HARRY POTTER,2
+movies,Name a famous wizard or witch,HERMIONE GRANGER,3
+movies,Name a famous wizard or witch,ALBUS DUMBLEDORE,3
+movies,Name a famous wizard or witch,GANDALF GREY,2
+movies,Name a famous wizard or witch,SARUMAN WHITE,2
+movies,Name a famous wizard or witch,MERLIN WIZARD,2
+movies,Name a famous wizard or witch,SEVERUS SNAPE,3
+movies,Name a famous wizard or witch,VOLDEMORT,2
+movies,Name a famous wizard or witch,RON WEASLEY,2
+movies,Name a famous wizard or witch,SIRIUS BLACK,2
+movies,Name a famous wizard or witch,NEVILLE LONGBOTTOM,3
+movies,Name a famous wizard or witch,LUNA LOVEGOOD,2
+movies,Name a famous wizard or witch,BELLATRIX LESTRANGE,3
+movies,Name a famous wizard or witch,MINERVA MCGONAGALL,3
+movies,Name a famous wizard or witch,RUBEUS HAGRID,2
+movies,Name a famous wizard or witch,NEWT SCAMANDER,3
+movies,Name a famous wizard or witch,GELLERT GRINDELWALD,3
+movies,Name a famous wizard or witch,ODIN ALLFATHER,2
+movies,Name a famous wizard or witch,DOCTOR STRANGE,3
+movies,Name a famous wizard or witch,SCARLET WITCH,2
+movies,Name a famous wizard or witch,WITCH KING,2
+movies,Name a famous wizard or witch,GLINDA GOOD,2
+movies,Name a famous wizard or witch,WICKED WITCH,2
+movies,Name a famous wizard or witch,MERLIN MAGE,2
+movies,Name a famous wizard or witch,RADAGAST BROWN,3
+movies,Name a famous wizard or witch,ELELTH WIZARD,2
+movies,Name a famous wizard or witch,MORGANA LE,2
+movies,Name a famous wizard or witch,BEPPO MAGE,2
+movies,Name a famous wizard or witch,STRAHD VON,2
+movies,Name a famous wizard or witch,YENNEFER VENGEBERG,3
+sports,An Olympic sport,TRACK AND FIELD,3
+sports,An Olympic sport,SWIMMING RACE,2
+sports,An Olympic sport,ARTISTIC GYMNASTICS,3
+sports,An Olympic sport,WEIGHTLIFTING,3
+sports,An Olympic sport,BOXING MATCH,2
+sports,An Olympic sport,FENCING DUEL,2
+sports,An Olympic sport,JUDO WRESTLING,2
+sports,An Olympic sport,TAEKWONDO,2
+sports,An Olympic sport,WRESTLING,2
+sports,An Olympic sport,ROWING BOAT,2
+sports,An Olympic sport,CANOE SPRINT,2
+sports,An Olympic sport,ROAD CYCLING,2
+sports,An Olympic sport,TRACK CYCLING,3
+sports,An Olympic sport,MOUNTAIN BIKE,3
+sports,An Olympic sport,BMX RACING,2
+sports,An Olympic sport,EQUESTRIAN,2
+sports,An Olympic sport,ARCHERY,2
+sports,An Olympic sport,SHOOTING SPORT,3
+sports,An Olympic sport,SAILING REGATTA,3
+sports,An Olympic sport,TRIATHLON,2
+sports,An Olympic sport,MODERN PENTATHLON,3
+sports,An Olympic sport,DIVING EVENT,2
+sports,An Olympic sport,WATER POLO,2
+sports,An Olympic sport,ARTISTIC SWIMMING,3
+sports,An Olympic sport,MARATHON RUN,2
+sports,An Olympic sport,HIGH JUMP,2
+sports,An Olympic sport,POLE VAULT,2
+sports,An Olympic sport,DISCUS THROW,3
+sports,An Olympic sport,JAVELIN THROW,3
+sports,An Olympic sport,SHOT PUT,2
+sports,A Summer Olympic sport,ARTISTIC GYMNASTICS,3
+sports,A Summer Olympic sport,SWIMMING RACE,2
+sports,A Summer Olympic sport,TRACK AND FIELD,3
+sports,A Summer Olympic sport,BEACH VOLLEYBALL,3
+sports,A Summer Olympic sport,WATER POLO,2
+sports,A Summer Olympic sport,FIELD HOCKEY,2
+sports,A Summer Olympic sport,ARTISTIC SWIMMING,3
+sports,A Summer Olympic sport,DIVING EVENT,2
+sports,A Summer Olympic sport,ROWING BOAT,2
+sports,A Summer Olympic sport,CANOE SLALOM,2
+sports,A Summer Olympic sport,ROAD CYCLING,2
+sports,A Summer Olympic sport,BMX FREESTYLE,3
+sports,A Summer Olympic sport,SKATEBOARDING,3
+sports,A Summer Olympic sport,SURFING SPORT,2
+sports,A Summer Olympic sport,SPORT CLIMBING,3
+sports,A Summer Olympic sport,BREAKDANCING,3
+sports,A Summer Olympic sport,3X3 BASKETBALL,3
+sports,A Summer Olympic sport,MODERN PENTATHLON,3
+sports,A Summer Olympic sport,EQUESTRIAN,2
+sports,A Summer Olympic sport,FENCING DUEL,2
+sports,A Summer Olympic sport,WEIGHTLIFTING,3
+sports,A Summer Olympic sport,GRECO ROMAN,3
+sports,A Summer Olympic sport,TABLE TENNIS,2
+sports,A Summer Olympic sport,BADMINTON,2
+sports,A Summer Olympic sport,ARCHERY,2
+sports,A Summer Olympic sport,SHOOTING SPORT,3
+sports,A Summer Olympic sport,SAILING REGATTA,3
+sports,A Summer Olympic sport,TRIATHLON,2
+sports,A Summer Olympic sport,MARATHON SWIM,3
+sports,A Summer Olympic sport,RHYTHMIC GYMNASTICS,3

@@ -176,6 +176,12 @@ try {
   await sleep(1000);
   await shot('06-lose');
 
+  /* paid reveal: the sheet should offer the next level instead of a retry */
+  await cdp.eval('window.HangmanApp.save.coins = 500');
+  await cdp.eval(`document.getElementById('btn-reveal').click()`);
+  await sleep(400);
+  await shot('06b-lose-revealed');
+
   /* compact phone, worst case for wrapping */
   await cdp.send('Emulation.setDeviceMetricsOverride', {
     width: 360, height: 740, deviceScaleFactor: 2, mobile: true

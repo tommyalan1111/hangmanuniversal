@@ -155,6 +155,20 @@ try {
   check('reveal button shows the answer', revealed === true, String(revealed));
   check('reveal charges 200 coins', coinsAfterReveal === 300, String(coinsAfterReveal));
 
+  const levelBefore = await evaluate('window.HangmanApp.save.level');
+  const nextLabel = await evaluate(`(() => {
+    const btn = document.getElementById('btn-next');
+    return btn ? btn.textContent.trim() : null;
+  })()`);
+  check('reveal replaces retry with next level', nextLabel === 'Next level', String(nextLabel));
+
+  await evaluate(`document.getElementById('btn-next').click()`);
+  await sleep(400);
+  const nextAnswer = await evaluate('window.__huAnswer()');
+  const levelAfter = await evaluate('window.HangmanApp.save.level');
+  check('next level shows a different word', nextAnswer !== answer3, `${answer3} -> ${nextAnswer}`);
+  check('level advanced after reveal', levelAfter === levelBefore + 1, `${levelBefore} -> ${levelAfter}`);
+
   const afterLose = JSON.parse(await evaluate('JSON.stringify(window.HangmanApp.save)'));
   check('streak resets on a loss', afterLose.streak === 0, String(afterLose.streak));
 

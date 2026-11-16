@@ -10,7 +10,9 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const out = path.join(root, 'www');
 
 const FILES = ['index.html', 'styles.css'];
-const DIRS = ['src', 'data'];
+const DIRS = ['src'];
+/* only the live data files: *.backup_*.js copies must never ship in the APK */
+const DATA_FILES = ['questions.js', 'questions.generated.js'];
 
 async function main() {
   await fs.rm(out, { recursive: true, force: true });
@@ -21,6 +23,10 @@ async function main() {
   }
   for (const dir of DIRS) {
     await fs.cp(path.join(root, dir), path.join(out, dir), { recursive: true });
+  }
+  await fs.mkdir(path.join(out, 'data'), { recursive: true });
+  for (const file of DATA_FILES) {
+    await fs.copyFile(path.join(root, 'data', file), path.join(out, 'data', file));
   }
 
   let bytes = 0;

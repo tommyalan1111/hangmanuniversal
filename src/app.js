@@ -675,14 +675,52 @@
 
       $('lose-answer').innerHTML =
         '<p class="sheet-answer' + (q.answer.length > 18 ? ' is-long' : '') + '"><small>Answer</small>' + q.answer + '</p>';
+
+      /* show the charge inside the sheet: a toast would sit on top of the buttons */
+      var costRow = document.createElement('div');
+      costRow.className = 'row';
+      costRow.id = 'reveal-cost';
+      costRow.innerHTML = '<span>Reveal cost</span><b>-' + C.REVEAL_COST + '</b>';
+      var rowsBox = document.querySelector('#sheet .rows');
+      if (rowsBox) rowsBox.appendChild(costRow);
+
       revealBtn.remove();
-      toast('Answer revealed · -' + C.REVEAL_COST + ' coins');
+
+      /* the answer is known now, so replaying the same word makes no sense:
+         the primary action becomes moving on */
+      var next = document.createElement('button');
+      next.className = 'btn btn-primary';
+      next.id = 'btn-next';
+      next.textContent = session.mode === 'level' ? 'Next level'
+        : session.mode === 'daily' ? 'Done' : 'Next word';
+      $('btn-retry').replaceWith(next);
+      next.addEventListener('click', continueAfterLoss);
+
     });
 
     $('btn-retry').addEventListener('click', function () {
       startQuestion(q, { mode: session.mode, level: session.level, category: session.category });
     });
     $('btn-exit').addEventListener('click', goHome);
+  }
+
+  /** Called after a loss where the player paid to see the answer. */
+  function continueAfterLoss() {
+    var mode = session.mode;
+    var category = session.category;
+    var level = session.level;
+
+    if (mode === 'level') {
+      save.level = Math.max(save.level, level + 1);
+      persist();
+      renderHome();
+      startLevel(save.level);
+    } else if (mode === 'daily') {
+      closeOverlay();
+      goHome();
+    } else {
+      startCategory(category);
+    }
   }
 
   function showHelp() {

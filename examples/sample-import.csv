@@ -1,91 +1,121 @@
 category,question,answer,difficulty
-geo,Which place requires you to buy a ticket to get in,CINEMA THEATER,2
-geo,Which place requires you to buy a ticket to get in,AMUSEMENT PARK,2
-geo,Which place requires you to buy a ticket to get in,MUSEUM EXHIBIT,2
-geo,Which place requires you to buy a ticket to get in,ZOO PARK,1
-geo,Which place requires you to buy a ticket to get in,AQUARIUM TANK,2
-geo,Which place requires you to buy a ticket to get in,CONCERT ARENA,3
-geo,Which place requires you to buy a ticket to get in,THEATER STAGE,2
-geo,Which place requires you to buy a ticket to get in,STADIUM MATCH,2
-geo,Which place requires you to buy a ticket to get in,WATER PARK,2
-geo,Which place requires you to buy a ticket to get in,HISTORIC CASTLE,3
-geo,Which place requires you to buy a ticket to get in,NATIONAL PARK,2
-geo,Which place requires you to buy a ticket to get in,ART GALLERY,2
-geo,Which place requires you to buy a ticket to get in,SCIENCE CENTER,2
-geo,Which place requires you to buy a ticket to get in,BOTANICAL GARDEN,2
-geo,Which place requires you to buy a ticket to get in,OBSERVATION DECK,3
-geo,Which place requires you to buy a ticket to get in,TRAIN STATION,1
-geo,Which place requires you to buy a ticket to get in,AIRPORT TERMINAL,2
-geo,Which place requires you to buy a ticket to get in,CIRCUS TENT,1
-geo,Which place requires you to buy a ticket to get in,PLANETARIUM DOME,3
-geo,Which place requires you to buy a ticket to get in,EXPO CENTER,2
-geo,Which place requires you to buy a ticket to get in,THEME PARK,2
-geo,Which place requires you to buy a ticket to get in,SAFARI PARK,2
-geo,Which place requires you to buy a ticket to get in,CASINO FLOOR,1
-geo,Which place requires you to buy a ticket to get in,ICE RINK,1
-geo,Which place requires you to buy a ticket to get in,BOWLING ALLEY,1
-geo,Which place requires you to buy a ticket to get in,GOLF COURSE,2
-geo,Which place requires you to buy a ticket to get in,SKI RESORT,2
-geo,Which place requires you to buy a ticket to get in,FERRIS WHEEL,2
-geo,Which place requires you to buy a ticket to get in,MONUMENT TOWER,2
-geo,Which place requires you to buy a ticket to get in,ARCHAEOLOGICAL SITE,3
-objects,What kind of shop can you find inside a shopping mall,CLOTHING BOUTIQUE,2
-objects,What kind of shop can you find inside a shopping mall,DEPARTMENT STORE,2
-objects,What kind of shop can you find inside a shopping mall,COFFEE SHOP,1
-objects,What kind of shop can you find inside a shopping mall,BOOKSTORE,1
-objects,What kind of shop can you find inside a shopping mall,JEWELRY STORE,2
-objects,What kind of shop can you find inside a shopping mall,ELECTRONICS STORE,2
-objects,What kind of shop can you find inside a shopping mall,COSMETICS STORE,2
-objects,What kind of shop can you find inside a shopping mall,SHOE STORE,1
-objects,What kind of shop can you find inside a shopping mall,TOY STORE,1
-objects,What kind of shop can you find inside a shopping mall,SPORTING GOODS,2
-objects,What kind of shop can you find inside a shopping mall,OPTICAL SHOP,2
-objects,What kind of shop can you find inside a shopping mall,SUPERMARKET GROCERY,3
-objects,What kind of shop can you find inside a shopping mall,FURNITURE SHOWROOM,3
-objects,What kind of shop can you find inside a shopping mall,PET SHOP,1
-objects,What kind of shop can you find inside a shopping mall,PERFUME SHOP,2
-objects,What kind of shop can you find inside a shopping mall,WATCH BOUTIQUE,2
-objects,What kind of shop can you find inside a shopping mall,HAIR SALON,1
-objects,What kind of shop can you find inside a shopping mall,NAIL SPA,1
-objects,What kind of shop can you find inside a shopping mall,FAST FOOD STALL,3
-objects,What kind of shop can you find inside a shopping mall,ICE CREAM PARLOR,3
-objects,What kind of shop can you find inside a shopping mall,BAKERY SHOP,1
-objects,What kind of shop can you find inside a shopping mall,DRY CLEANER,2
-objects,What kind of shop can you find inside a shopping mall,MOBILE KIOSK,2
-objects,What kind of shop can you find inside a shopping mall,GIFT SHOP,1
-objects,What kind of shop can you find inside a shopping mall,CANDY STORE,1
-objects,What kind of shop can you find inside a shopping mall,PHARMACY CHEMIST,2
-objects,What kind of shop can you find inside a shopping mall,HOME DECOR,2
-objects,What kind of shop can you find inside a shopping mall,LUGGAGE STORE,2
-objects,What kind of shop can you find inside a shopping mall,MATTRESS STORE,2
-objects,What kind of shop can you find inside a shopping mall,FLOWER SHOP,1
-geo,Where do people go when they feel sick or injured,GENERAL HOSPITAL,2
-geo,Where do people go when they feel sick or injured,LOCAL CLINIC,2
-geo,Where do people go when they feel sick or injured,URGENT CARE,2
-geo,Where do people go when they feel sick or injured,EMERGENCY ROOM,3
-geo,Where do people go when they feel sick or injured,PHARMACY STORE,2
-geo,Where do people go when they feel sick or injured,DOCTOR OFFICE,2
-geo,Where do people go when they feel sick or injured,DENTAL CLINIC,2
-geo,Where do people go when they feel sick or injured,MEDICAL CENTER,2
-geo,Where do people go when they feel sick or injured,SPECIALIST PRACTICE,3
-geo,Where do people go when they feel sick or injured,COMMUNITY HEALTHCARE,3
-geo,Where do people go when they feel sick or injured,PEDIATRIC CLINIC,2
-geo,Where do people go when they feel sick or injured,WALK IN CLINIC,3
-geo,Where do people go when they feel sick or injured,CHIROPRACTIC OFFICE,3
-geo,Where do people go when they feel sick or injured,PHYSIOTHERAPY LAB,3
-geo,Where do people go when they feel sick or injured,HOME BED,1
-geo,Where do people go when they feel sick or injured,REST ROOM,1
-geo,Where do people go when they feel sick or injured,PHARMACY COUNTER,3
-geo,Where do people go when they feel sick or injured,HEALTH BOOTH,2
-geo,Where do people go when they feel sick or injured,HOSPITAL WARD,2
-geo,Where do people go when they feel sick or injured,SURGICAL CENTER,3
-geo,Where do people go when they feel sick or injured,EYE CLINIC,1
-geo,Where do people go when they feel sick or injured,NURSING STATION,2
-geo,Where do people go when they feel sick or injured,RECOVERY ROOM,2
-geo,Where do people go when they feel sick or injured,FAMILY DOCTOR,2
-geo,Where do people go when they feel sick or injured,HERBALIST SHOP,2
-geo,Where do people go when they feel sick or injured,QUARANTINE ZONE,2
-geo,Where do people go when they feel sick or injured,SANATORIUM,2
-geo,Where do people go when they feel sick or injured,DISPENSARY ROOM,2
-geo,Where do people go when they feel sick or injured,TRAUMA UNIT,2
-geo,Where do people go when they feel sick or injured,HEALTH RETREAT,2
+objects,Which section or aisle can you walk through in a supermarket,FRESH PRODUCE AISLE,1
+objects,Which section or aisle can you walk through in a supermarket,DAIRY AND EGGS SECTION,1
+objects,Which section or aisle can you walk through in a supermarket,FROZEN FOODS FREEZER,1
+objects,Which section or aisle can you walk through in a supermarket,BAKERY AND BREAD AISLE,1
+objects,Which section or aisle can you walk through in a supermarket,MEAT AND POULTRY COUNTER,2
+objects,Which section or aisle can you walk through in a supermarket,FRESH SEAFOOD MARKET,2
+objects,Which section or aisle can you walk through in a supermarket,PANTRY DRY GOODS AISLE,1
+objects,Which section or aisle can you walk through in a supermarket,BREAKFAST CEREAL AISLE,1
+objects,Which section or aisle can you walk through in a supermarket,BEVERAGE AND SODA AISLE,1
+objects,Which section or aisle can you walk through in a supermarket,SNACKS AND CHIPS AISLE,1
+objects,Which section or aisle can you walk through in a supermarket,CONDIMENTS AND SAUCES,2
+objects,Which section or aisle can you walk through in a supermarket,PASTA AND RICE AISLE,1
+objects,Which section or aisle can you walk through in a supermarket,CANNED GOODS AISLE,1
+objects,Which section or aisle can you walk through in a supermarket,BAKING INGREDIENTS AISLE,2
+objects,Which section or aisle can you walk through in a supermarket,COFFEE AND TEA AISLE,1
+objects,Which section or aisle can you walk through in a supermarket,HEALTH AND BEAUTY AISLE,2
+objects,Which section or aisle can you walk through in a supermarket,PHARMACY OVER THE COUNTER,2
+objects,Which section or aisle can you walk through in a supermarket,CLEANING SUPPLIES AISLE,1
+objects,Which section or aisle can you walk through in a supermarket,PAPER PRODUCTS AISLE,1
+objects,Which section or aisle can you walk through in a supermarket,PET FOOD AND CARE AISLE,2
+objects,Which section or aisle can you walk through in a supermarket,BABY CARE AND DIAPERS,2
+objects,Which section or aisle can you walk through in a supermarket,HOME KITCHENWARE AISLE,2
+objects,Which section or aisle can you walk through in a supermarket,FLORAL AND PLANT BOOTH,1
+objects,Which section or aisle can you walk through in a supermarket,DELICATESSEN COUNTER,1
+objects,Which section or aisle can you walk through in a supermarket,WINE AND BEER CORNER,2
+objects,Which section or aisle can you walk through in a supermarket,ORGANIC FOOD SECTION,2
+objects,Which section or aisle can you walk through in a supermarket,SEASONAL HOLIDAY AISLE,2
+objects,Which section or aisle can you walk through in a supermarket,CHECKOUT LANE QUEUE,1
+objects,Which section or aisle can you walk through in a supermarket,BULK FOODS BIN AISLE,2
+objects,Which section or aisle can you walk through in a supermarket,INTERNATIONAL FOODS AISLE,2
+objects,What personal item do people always check before leaving the house,SMARTPHONE DEVICE,1
+objects,What personal item do people always check before leaving the house,HOUSE KEYS,1
+objects,What personal item do people always check before leaving the house,WALLET OR PURSE,1
+objects,What personal item do people always check before leaving the house,WRISTWATCH,1
+objects,What personal item do people always check before leaving the house,CAR KEY FOB,1
+objects,What personal item do people always check before leaving the house,PAIR OF SUNGLASSES,1
+objects,What personal item do people always check before leaving the house,EMPLOYEE ID BADGE,2
+objects,What personal item do people always check before leaving the house,TRANSIT CARD,1
+objects,What personal item do people always check before leaving the house,HOUSE KEYRING,1
+objects,What personal item do people always check before leaving the house,POCKET TISSUES,1
+objects,What personal item do people always check before leaving the house,LIP BALM TUBE,1
+objects,What personal item do people always check before leaving the house,HAND SANITIZER,1
+objects,What personal item do people always check before leaving the house,WIRELESS EARBUDS,2
+objects,What personal item do people always check before leaving the house,DRIVERS LICENSE,1
+objects,What personal item do people always check before leaving the house,HOUSE INVENTORY CARD,3
+objects,What personal item do people always check before leaving the house,POCKET NOTEBOOK,2
+objects,What personal item do people always check before leaving the house,INK PEN,1
+objects,What personal item do people always check before leaving the house,PACK OF GUM,1
+objects,What personal item do people always check before leaving the house,PORTABLE POWER BANK,2
+objects,What personal item do people always check before leaving the house,STYLUS PEN,2
+objects,What personal item do people always check before leaving the house,MEDICATION CASE,2
+objects,What personal item do people always check before leaving the house,COIN PURSE,1
+objects,What personal item do people always check before leaving the house,GYM LOCKER KEY,2
+objects,What personal item do people always check before leaving the house,UMPRELLA POUCH,2
+objects,What personal item do people always check before leaving the house,READING GLASSES,2
+objects,What personal item do people always check before leaving the house,BUSINESS CARD HOLDER,2
+objects,What personal item do people always check before leaving the house,POSTAL MAIL KEY,2
+objects,What personal item do people always check before leaving the house,REUSABLE SHOPPING BAG,1
+objects,What personal item do people always check before leaving the house,BICYcle LOCK KEY,2
+objects,What personal item do people always check before leaving the house,SECURITY TOKEN,3
+objects,Which container is used to store food or drinks at home,GLASS MASON JAR,1
+objects,Which container is used to store food or drinks at home,PLASTIC FOOD CONTAINER,1
+objects,Which container is used to store food or drinks at home,STAINLESS STEEL TUMBLER,2
+objects,Which container is used to store food or drinks at home,CERAMIC COFFEE MUG,1
+objects,Which container is used to store food or drinks at home,INSULATED WATER BOTTLE,1
+objects,Which container is used to store food or drinks at home,GLASS PITCHER,1
+objects,Which container is used to store food or drinks at home,CERAMIC CASSEROLE DISH,2
+objects,Which container is used to store food or drinks at home,ALUMINUM FOIL PAN,1
+objects,Which container is used to store food or drinks at home,SILICONE ZIP POUCH,2
+objects,Which container is used to store food or drinks at home,VACUUM SEAL BAG,3
+objects,Which container is used to store food or drinks at home,PLASTIC ICE CUBE TRAY,1
+objects,Which container is used to store food or drinks at home,GLASS BAKING DISH,2
+objects,Which container is used to store food or drinks at home,BUTTER DISH,1
+objects,Which container is used to store food or drinks at home,SUGAR BOWL,1
+objects,Which container is used to store food or drinks at home,CREAMER PITCHER,1
+objects,Which container is used to store food or drinks at home,BREAD BOX,2
+objects,Which container is used to store food or drinks at home,FRUIT BOWL,1
+objects,Which container is used to store food or drinks at home,SALAD BOWL,1
+objects,Which container is used to store food or drinks at home,THERMOS FLASK,2
+objects,Which container is used to store food or drinks at home,BABY MILK BOTTLE,1
+objects,Which container is used to store food or drinks at home,SHAKER BOTTLE,2
+objects,Which container is used to store food or drinks at home,MEAL PREP CONTAINER,2
+objects,Which container is used to store food or drinks at home,PANTRY STORAGE BIN,2
+objects,Which container is used to store food or drinks at home,SPICE JAR SET,2
+objects,Which container is used to store food or drinks at home,OIL CRUET BOTTLE,2
+objects,Which container is used to store food or drinks at home,SAUCE SQUEEZE BOTTLE,1
+objects,Which container is used to store food or drinks at home,WINE DECANTER,3
+objects,Which container is used to store food or drinks at home,COFFEE BEAN CANISTER,2
+objects,Which container is used to store food or drinks at home,TEA TIN BOX,2
+objects,Which container is used to store food or drinks at home,LUNCH BOX CONTAINER,1
+objects,What small object is easy to lose around the house,LOOSE METAL KEY,1
+objects,What small object is easy to lose around the house,TV REMOTE CONTROL,1
+objects,What small object is easy to lose around the house,COIN CHANGE,1
+objects,What small object is easy to lose around the house,PAIR OF EARBUDS,2
+objects,What small object is easy to lose around the house,USB FLASH DRIVE,1
+objects,What small object is easy to lose around the house,HAIR TIE BANDS,1
+objects,What small object is easy to lose around the house,BALLPOINT PEN,1
+objects,What small object is easy to lose around the house,SMALL BUTTON BATTERY,2
+objects,What small object is easy to lose around the house,PAIR OF HEADPHONES,2
+objects,What small object is easy to lose around the house,FINGER RING,2
+objects,What small object is easy to lose around the house,PAIR OF EARRINGS,2
+objects,What small object is easy to lose around the house,METAL SEWING NEEDLE,2
+objects,What small object is easy to lose around the house,SAFETY PIN,1
+objects,What small object is easy to lose around the house,NAIL CLIPPER,1
+objects,What small object is easy to lose around the house,GUITAR PICK,2
+objects,What small object is easy to lose around the house,STAMP STICKER,1
+objects,What small object is easy to lose around the house,SD MEMORY CARD,2
+objects,What small object is easy to lose around the house,SIM CARD EJECTOR PIN,2
+objects,What small object is easy to lose around the house,PAPER CLIP,1
+objects,What small object is easy to lose around the house,METAL DIES,2
+objects,What small object is easy to lose around the house,GAME PIECE TOKEN,1
+objects,What small object is easy to lose around the house,DICE CUBE,1
+objects,What small object is easy to lose around the house,CHESS PAWN,1
+objects,What small object is easy to lose around the house,TOY BRICK PIECE,1
+objects,What small object is easy to lose around the house,SMALL SCREW,2
+objects,What small object is easy to lose around the house,WASHING MACHINE LINT,2
+objects,What small object is easy to lose around the house,RUBBER BAND,1
+objects,What small object is easy to lose around the house,ZIPPER PULL TAB,2
+objects,What small object is easy to lose around the house,BOOKMARK STRIP,1
+objects,What small object is easy to lose around the house,WALL NAIL,2

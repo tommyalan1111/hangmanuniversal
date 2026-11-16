@@ -262,6 +262,21 @@ Thêm vào `capacitor.config.json`:
 Rồi `npm run dev` + `npm run android:sync`. Sửa CSS/JS trên máy tính là điện thoại
 cập nhật ngay, không phải build lại. **Nhớ xoá `server.url` trước khi build APK.**
 
+### Splash & icon
+
+- Splash: `android/app/src/main/res/drawable/launch_background.xml` (nền #070B16 + logo giữa)
+  trỏ tới `drawable-*/splash_mark.png` — mỗi mật độ một kích thước, sinh từ `.tools/splash-mark.png`
+- Icon launcher: `mipmap-*/ic_launcher.png` + adaptive icon (`mipmap-anydpi-v26`)
+- Theme khởi động: `res/values/styles.xml` → `AppTheme.NoActionBarLaunch`
+- Đổi logo thì thay `.tools/splash-mark.png` rồi chạy lại đoạn resize trong README hoặc
+  `node tools/build-apk.mjs` sau khi cập nhật ảnh
+
+### Debug WebView đang chạy
+
+```bash
+npm run debug:webview   # in URL, số câu hỏi, lỗi console của app đang chạy
+```
+
 ### Bản release (khi cần)
 
 ```bash

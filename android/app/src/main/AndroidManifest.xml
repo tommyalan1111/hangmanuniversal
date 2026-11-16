@@ -44,4 +44,9 @@
     <!-- Permissions -->
 
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Required by Google Play for apps that use an advertising identifier.
+         The AdMob/Play Services Ads SDK only merges this on some versions, so it
+         is declared explicitly here. Remove it only if you stop using ad IDs. -->
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
 </manifest>

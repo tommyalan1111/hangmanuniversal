@@ -262,6 +262,29 @@ Thêm vào `capacitor.config.json`:
 Rồi `npm run dev` + `npm run android:sync`. Sửa CSS/JS trên máy tính là điện thoại
 cập nhật ngay, không phải build lại. **Nhớ xoá `server.url` trước khi build APK.**
 
+### Quảng cáo & thanh toán
+
+Hai plugin native đang dùng: `@capacitor-community/admob` và `@capgo/native-purchases`.
+Chúng **phải được cài thật** rồi sync, nếu chỉ khai trong `package.json` thì
+`cap sync` không thêm plugin và APK không có SDK:
+
+```bash
+npm install
+npx cap sync android
+npm run apk
+```
+
+| Thứ | Nằm ở đâu |
+| --- | --- |
+| AdMob App ID | `AndroidManifest.xml` → meta-data `com.google.android.gms.ads.APPLICATION_ID` |
+| Banner / interstitial ad unit | `src/services/admob.js` |
+| Quyền `AD_ID` | `AndroidManifest.xml` — Play bắt buộc khi khai "dùng Advertising ID" |
+| Quyền `BILLING` | do plugin purchases tự thêm khi merge manifest |
+
+Ba giá trị App ID + 2 ad unit ID phải thuộc **cùng một tài khoản AdMob**.
+Sau khi thêm SDK, mục khai báo Advertising ID trên Play Console phải là "Có",
+nếu không sẽ bị cảnh báo ngược lại.
+
 ### Splash & icon
 
 - Splash: `android/app/src/main/res/drawable/launch_background.xml` (nền #070B16 + logo giữa)

@@ -34,7 +34,11 @@
   --ad-banner-height: 0px;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+  /* iOS WKWebView: prevent double-tap/pinch page zoom on every element. */
+  touch-action: manipulation;
+}
 
 html, body {
   margin: 0;
@@ -43,8 +47,15 @@ html, body {
   color: var(--ink);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   overscroll-behavior: none;
+  /* Stops iOS/WKWebView double-tap zoom while keeping normal scrolling. */
+  touch-action: manipulation;
+}
+
+button, .btn, .key, .cat, .icon-btn, .link-btn, .hint-btn {
+  touch-action: manipulation;
 }
 
 body {
@@ -1038,6 +1049,41 @@ body.has-banner #screen-categories .cat-list {
     margin-bottom: 0;
   }
   .overlay { padding: 22px; }
+}
+
+/*
+ * Tablets (iPad, Android tablets) should use the full screen instead of the
+ * narrow desktop card. Pointer-coarse keeps the card for real desktop mice.
+ */
+@media (min-width: 760px) and (any-pointer: coarse) {
+  body {
+    display: block;
+    min-height: 100dvh;
+    padding: 0;
+  }
+
+  .app {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    min-height: 100dvh;
+    margin: 0 auto;
+    padding: calc(20px + env(safe-area-inset-top, 0px)) 24px calc(20px + env(safe-area-inset-bottom, 0px));
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    overflow: visible;
+  }
+
+  .overlay {
+    place-items: end center;
+    padding: 0;
+  }
+
+  .cat-list {
+    overflow-y: visible;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

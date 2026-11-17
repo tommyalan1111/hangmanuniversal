@@ -1,22 +1,52 @@
 PODS:
   - Capacitor (7.6.10):
     - CapacitorCordova
+  - CapacitorApp (7.1.2):
+    - Capacitor
+  - CapacitorCommunityAdmob (7.2.0):
+    - Capacitor
+    - Google-Mobile-Ads-SDK (= 12.12.0)
+    - GoogleUserMessagingPlatform (= 3.0.0)
   - CapacitorCordova (7.6.10)
+  - CapgoNativePurchases (7.19.3):
+    - Capacitor
+  - Google-Mobile-Ads-SDK (12.12.0):
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleUserMessagingPlatform (3.0.0)
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
+  - "CapacitorApp (from `../../node_modules/@capacitor/app`)"
+  - "CapacitorCommunityAdmob (from `../../node_modules/@capacitor-community/admob`)"
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
+  - "CapgoNativePurchases (from `../../node_modules/@capgo/native-purchases`)"
+
+SPEC REPOS:
+  trunk:
+    - Google-Mobile-Ads-SDK
+    - GoogleUserMessagingPlatform
 
 EXTERNAL SOURCES:
   Capacitor:
     :path: "../../node_modules/@capacitor/ios"
+  CapacitorApp:
+    :path: "../../node_modules/@capacitor/app"
+  CapacitorCommunityAdmob:
+    :path: "../../node_modules/@capacitor-community/admob"
   CapacitorCordova:
     :path: "../../node_modules/@capacitor/ios"
+  CapgoNativePurchases:
+    :path: "../../node_modules/@capgo/native-purchases"
 
 SPEC CHECKSUMS:
   Capacitor: f50a57c9ce466bce30d574e1348ab25b1f572536
+  CapacitorApp: f01a913211780e0718dae9750442c3e23f96e106
+  CapacitorCommunityAdmob: 04498ca8d01a097aa7d9d80584094b6b3419ec3f
   CapacitorCordova: 33313bf8891d44741970e16534be781ff3caa00a
+  CapgoNativePurchases: d7414b594b3dd0c5871c165ebcedf59029e383b4
+  Google-Mobile-Ads-SDK: 4dde70a8c18d96b14f9548759b8cec6ecb0bc3e6
+  GoogleUserMessagingPlatform: f8d0cdad3ca835406755d0a69aa634f00e76d576
 
-PODFILE CHECKSUM: 4cb09c9c223cd1f9695d4a908960a1c8685d1268
+PODFILE CHECKSUM: 86a747fc437d54268b2e99d7bfff7767afcb2c6c
 
 COCOAPODS: 1.17.0

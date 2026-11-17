@@ -1,121 +1,101 @@
 category,question,answer,difficulty
-objects,Which section or aisle can you walk through in a supermarket,FRESH PRODUCE AISLE,1
-objects,Which section or aisle can you walk through in a supermarket,DAIRY AND EGGS SECTION,1
-objects,Which section or aisle can you walk through in a supermarket,FROZEN FOODS FREEZER,1
-objects,Which section or aisle can you walk through in a supermarket,BAKERY AND BREAD AISLE,1
-objects,Which section or aisle can you walk through in a supermarket,MEAT AND POULTRY COUNTER,2
-objects,Which section or aisle can you walk through in a supermarket,FRESH SEAFOOD MARKET,2
-objects,Which section or aisle can you walk through in a supermarket,PANTRY DRY GOODS AISLE,1
-objects,Which section or aisle can you walk through in a supermarket,BREAKFAST CEREAL AISLE,1
-objects,Which section or aisle can you walk through in a supermarket,BEVERAGE AND SODA AISLE,1
-objects,Which section or aisle can you walk through in a supermarket,SNACKS AND CHIPS AISLE,1
-objects,Which section or aisle can you walk through in a supermarket,CONDIMENTS AND SAUCES,2
-objects,Which section or aisle can you walk through in a supermarket,PASTA AND RICE AISLE,1
-objects,Which section or aisle can you walk through in a supermarket,CANNED GOODS AISLE,1
-objects,Which section or aisle can you walk through in a supermarket,BAKING INGREDIENTS AISLE,2
-objects,Which section or aisle can you walk through in a supermarket,COFFEE AND TEA AISLE,1
-objects,Which section or aisle can you walk through in a supermarket,HEALTH AND BEAUTY AISLE,2
-objects,Which section or aisle can you walk through in a supermarket,PHARMACY OVER THE COUNTER,2
-objects,Which section or aisle can you walk through in a supermarket,CLEANING SUPPLIES AISLE,1
-objects,Which section or aisle can you walk through in a supermarket,PAPER PRODUCTS AISLE,1
-objects,Which section or aisle can you walk through in a supermarket,PET FOOD AND CARE AISLE,2
-objects,Which section or aisle can you walk through in a supermarket,BABY CARE AND DIAPERS,2
-objects,Which section or aisle can you walk through in a supermarket,HOME KITCHENWARE AISLE,2
-objects,Which section or aisle can you walk through in a supermarket,FLORAL AND PLANT BOOTH,1
-objects,Which section or aisle can you walk through in a supermarket,DELICATESSEN COUNTER,1
-objects,Which section or aisle can you walk through in a supermarket,WINE AND BEER CORNER,2
-objects,Which section or aisle can you walk through in a supermarket,ORGANIC FOOD SECTION,2
-objects,Which section or aisle can you walk through in a supermarket,SEASONAL HOLIDAY AISLE,2
-objects,Which section or aisle can you walk through in a supermarket,CHECKOUT LANE QUEUE,1
-objects,Which section or aisle can you walk through in a supermarket,BULK FOODS BIN AISLE,2
-objects,Which section or aisle can you walk through in a supermarket,INTERNATIONAL FOODS AISLE,2
-objects,What personal item do people always check before leaving the house,SMARTPHONE DEVICE,1
-objects,What personal item do people always check before leaving the house,HOUSE KEYS,1
-objects,What personal item do people always check before leaving the house,WALLET OR PURSE,1
-objects,What personal item do people always check before leaving the house,WRISTWATCH,1
-objects,What personal item do people always check before leaving the house,CAR KEY FOB,1
-objects,What personal item do people always check before leaving the house,PAIR OF SUNGLASSES,1
-objects,What personal item do people always check before leaving the house,EMPLOYEE ID BADGE,2
-objects,What personal item do people always check before leaving the house,TRANSIT CARD,1
-objects,What personal item do people always check before leaving the house,HOUSE KEYRING,1
-objects,What personal item do people always check before leaving the house,POCKET TISSUES,1
-objects,What personal item do people always check before leaving the house,LIP BALM TUBE,1
-objects,What personal item do people always check before leaving the house,HAND SANITIZER,1
-objects,What personal item do people always check before leaving the house,WIRELESS EARBUDS,2
-objects,What personal item do people always check before leaving the house,DRIVERS LICENSE,1
-objects,What personal item do people always check before leaving the house,HOUSE INVENTORY CARD,3
-objects,What personal item do people always check before leaving the house,POCKET NOTEBOOK,2
-objects,What personal item do people always check before leaving the house,INK PEN,1
-objects,What personal item do people always check before leaving the house,PACK OF GUM,1
-objects,What personal item do people always check before leaving the house,PORTABLE POWER BANK,2
-objects,What personal item do people always check before leaving the house,STYLUS PEN,2
-objects,What personal item do people always check before leaving the house,MEDICATION CASE,2
-objects,What personal item do people always check before leaving the house,COIN PURSE,1
-objects,What personal item do people always check before leaving the house,GYM LOCKER KEY,2
-objects,What personal item do people always check before leaving the house,UMPRELLA POUCH,2
-objects,What personal item do people always check before leaving the house,READING GLASSES,2
-objects,What personal item do people always check before leaving the house,BUSINESS CARD HOLDER,2
-objects,What personal item do people always check before leaving the house,POSTAL MAIL KEY,2
-objects,What personal item do people always check before leaving the house,REUSABLE SHOPPING BAG,1
-objects,What personal item do people always check before leaving the house,BICYcle LOCK KEY,2
-objects,What personal item do people always check before leaving the house,SECURITY TOKEN,3
-objects,Which container is used to store food or drinks at home,GLASS MASON JAR,1
-objects,Which container is used to store food or drinks at home,PLASTIC FOOD CONTAINER,1
-objects,Which container is used to store food or drinks at home,STAINLESS STEEL TUMBLER,2
-objects,Which container is used to store food or drinks at home,CERAMIC COFFEE MUG,1
-objects,Which container is used to store food or drinks at home,INSULATED WATER BOTTLE,1
-objects,Which container is used to store food or drinks at home,GLASS PITCHER,1
-objects,Which container is used to store food or drinks at home,CERAMIC CASSEROLE DISH,2
-objects,Which container is used to store food or drinks at home,ALUMINUM FOIL PAN,1
-objects,Which container is used to store food or drinks at home,SILICONE ZIP POUCH,2
-objects,Which container is used to store food or drinks at home,VACUUM SEAL BAG,3
-objects,Which container is used to store food or drinks at home,PLASTIC ICE CUBE TRAY,1
-objects,Which container is used to store food or drinks at home,GLASS BAKING DISH,2
-objects,Which container is used to store food or drinks at home,BUTTER DISH,1
-objects,Which container is used to store food or drinks at home,SUGAR BOWL,1
-objects,Which container is used to store food or drinks at home,CREAMER PITCHER,1
-objects,Which container is used to store food or drinks at home,BREAD BOX,2
-objects,Which container is used to store food or drinks at home,FRUIT BOWL,1
-objects,Which container is used to store food or drinks at home,SALAD BOWL,1
-objects,Which container is used to store food or drinks at home,THERMOS FLASK,2
-objects,Which container is used to store food or drinks at home,BABY MILK BOTTLE,1
-objects,Which container is used to store food or drinks at home,SHAKER BOTTLE,2
-objects,Which container is used to store food or drinks at home,MEAL PREP CONTAINER,2
-objects,Which container is used to store food or drinks at home,PANTRY STORAGE BIN,2
-objects,Which container is used to store food or drinks at home,SPICE JAR SET,2
-objects,Which container is used to store food or drinks at home,OIL CRUET BOTTLE,2
-objects,Which container is used to store food or drinks at home,SAUCE SQUEEZE BOTTLE,1
-objects,Which container is used to store food or drinks at home,WINE DECANTER,3
-objects,Which container is used to store food or drinks at home,COFFEE BEAN CANISTER,2
-objects,Which container is used to store food or drinks at home,TEA TIN BOX,2
-objects,Which container is used to store food or drinks at home,LUNCH BOX CONTAINER,1
-objects,What small object is easy to lose around the house,LOOSE METAL KEY,1
-objects,What small object is easy to lose around the house,TV REMOTE CONTROL,1
-objects,What small object is easy to lose around the house,COIN CHANGE,1
-objects,What small object is easy to lose around the house,PAIR OF EARBUDS,2
-objects,What small object is easy to lose around the house,USB FLASH DRIVE,1
-objects,What small object is easy to lose around the house,HAIR TIE BANDS,1
-objects,What small object is easy to lose around the house,BALLPOINT PEN,1
-objects,What small object is easy to lose around the house,SMALL BUTTON BATTERY,2
-objects,What small object is easy to lose around the house,PAIR OF HEADPHONES,2
-objects,What small object is easy to lose around the house,FINGER RING,2
-objects,What small object is easy to lose around the house,PAIR OF EARRINGS,2
-objects,What small object is easy to lose around the house,METAL SEWING NEEDLE,2
-objects,What small object is easy to lose around the house,SAFETY PIN,1
-objects,What small object is easy to lose around the house,NAIL CLIPPER,1
-objects,What small object is easy to lose around the house,GUITAR PICK,2
-objects,What small object is easy to lose around the house,STAMP STICKER,1
-objects,What small object is easy to lose around the house,SD MEMORY CARD,2
-objects,What small object is easy to lose around the house,SIM CARD EJECTOR PIN,2
-objects,What small object is easy to lose around the house,PAPER CLIP,1
-objects,What small object is easy to lose around the house,METAL DIES,2
-objects,What small object is easy to lose around the house,GAME PIECE TOKEN,1
-objects,What small object is easy to lose around the house,DICE CUBE,1
-objects,What small object is easy to lose around the house,CHESS PAWN,1
-objects,What small object is easy to lose around the house,TOY BRICK PIECE,1
-objects,What small object is easy to lose around the house,SMALL SCREW,2
-objects,What small object is easy to lose around the house,WASHING MACHINE LINT,2
-objects,What small object is easy to lose around the house,RUBBER BAND,1
-objects,What small object is easy to lose around the house,ZIPPER PULL TAB,2
-objects,What small object is easy to lose around the house,BOOKMARK STRIP,1
-objects,What small object is easy to lose around the house,WALL NAIL,2
+body,Located in the inner ear this fluid filled loop helps maintain body balance,SEMICIRCULAR CANAL,3
+body,Producing bile to emulsify dietary fats this large organ sits under ribs,LIVER ORGAN,2
+body,This tough white fibrous coat forms the protective outer layer of the eye,SCLERA,1
+body,Carrying oxygen from lungs to muscles these cells contain red hemoglobin,RED BLOOD CELLS,3
+body,Can you guess the longest bone in the upper arm between shoulder and elbow,HUMERUS,2
+body,Located at the base of the brain this gland secretes growth hormones,PITUITARY GLAND,3
+body,This flap of tissue seals the windpipe while swallowing food or water,EPIGLOTTIS,2
+body,Connecting bone to bone these strong fibrous bands stabilize human joints,LIGAMENTS,2
+body,Filtering waste from blood these two bean shaped organs sit in the lower back,KIDNEYS,2
+body,This colored muscular ring adjusts pupil size in bright or dim light,IRIS MUSCLE,2
+books,Written by George Orwell this dystopian classic introduces Thought Police,NINETEEN EIGHTY FOUR,3
+books,Following a boy stranded on a lifeboat this novel features a Bengal tiger,LIFE OF PI,2
+books,Set in a futuristic society this Ray Bradbury novel burns all books,FAHRENHEIT,2
+books,Written by Bram Stoker this Victorian horror features Count Dracula,DRACULA NOVEL,2
+books,Can you guess the JRR Tolkien fantasy where Bilbo meets Gollum in caves,THE HOBBIT,2
+books,Written by Mary Shelley this novel warns against unchecked scientific ambition,FRANKENSTEIN,3
+books,Following four March sisters during the Civil War this novel is a classic,LITTLE WOMEN,3
+books,This classic novel by Herman Melville follows Captain Ahab hunting a whale,MOBY DICK,2
+books,Written by Harper Lee this novel explores racial injustice in Alabama,TO KILL A MOCKINGBIRD,3
+books,Set in 1920s New York this novel features mysterious millionaire Jay Gatsby,THE GREAT GATSBY,3
+art,Painted by Leonardo da Vinci this mural shows Jesus dining with twelve apostles,THE LAST SUPPER,3
+art,Created by Auguste Rodin this bronze sculpture depicts a man deep in thought,THE THINKER,2
+art,Painted by Vincent van Gogh this swirling night sky overlooks Saint Remy,THE STARRY NIGHT,3
+art,This Spanish surrealist painted melting pocket watches in a desert dreamscape,SALVADOR DALI,3
+art,Can you guess the Dutch master who painted Girl with a Pearl Earring,VERMEER,2
+art,Carved from white marble this Michelangelo statue stands in Florence,DAVID,1
+art,Painted by Edvard Munch this haunting artwork shows a figure on a bridge,THE SCREAM,2
+art,This American pop artist screen printed colorful portraits of Marilyn Monroe,ANDY WARHOL,2
+art,Painted by Sandro Botticelli this masterpiece shows Venus riding a giant shell,BIRTH OF VENUS,3
+art,This French impressionist painted dreamy water lilies at his Giverny garden,CLAUDE MONET,3
+nature,Formed when sea arches collapse these tall rock pillars stand offshore,SEA STACKS,2
+nature,Erupting periodically with boiling water this Yellowstone geyser is famous,OLD FAITHFUL,3
+nature,This vast tropical wetland in Brazil shelters jaguars and giant otters,PANTANAL,2
+nature,Growing in Sonoran deserts this giant cactus stores tons of rainwater,SAGUARO,2
+nature,Can you guess the glowing green sky curtains seen near the North Pole,AURORA BOREALIS,3
+nature,Occurring when tectonic plates slip suddenly this tremor shakes Earth crust,EARTHQUAKE,2
+nature,This deep ocean trench in the western Pacific is Earth deepest point,MARIANA TRENCH,3
+nature,Forming when river bends get cut off this crescent lake sits beside rivers,OXBOW LAKE,2
+nature,This violently rotating column of air stretches from storm clouds to ground,TORNADO,2
+nature,Built by tiny coral polyps these underwater reefs teem with tropical fish,CORAL REEF,2
+daily,Used to slice boiled eggs into neat rounds this tool has fine metal wires,EGG SLICER,2
+daily,Worn on hands while baking this thick padded glove prevents oven burns,OVEN MITT,2
+daily,This kitchen appliance pops sliced bread upward once golden and crispy,TOASTER,2
+daily,Used to strain boiled pasta from hot water this bowl has drainage holes,COLANDER,2
+daily,Can you guess the small dish placed beside sinks to hold wet soap bars,SOAP DISH,2
+daily,Hanging inside wardrobes this aromatic cedar block repels clothes moths,CEDAR BLOCK,2
+daily,Used to pick up pet hair from sofas this adhesive cylinder rolls smoothly,LINT ROLLER,2
+daily,This woven bamboo mat rolls sushi rice and nori into tight cylinders,BAMBOO MAT,2
+daily,Used to press wrinkles out of cotton shirts this hot appliance glides smoothly,STEAM IRON,2
+daily,This insulated vacuum bottle keeps coffee piping hot for twelve hours,THERMOS,2
+biology,Passing genetic code from DNA to ribosomes is this single stranded molecule,MESSENGER RNA,3
+biology,Living on rocks and tree bark these organisms combine fungi and algae,LICHEN,1
+biology,This green organelle captures solar energy to make glucose in plants,CHLOROPLAST,2
+biology,Producing milk to feed their young defines this warm blooded class,MAMMALS,2
+biology,Can you guess the double helix molecule storing hereditary instructions,DNA,1
+biology,This cell division process halves chromosome counts to form gametes,MEIOSIS,2
+biology,Adapting white winter coats helps Arctic hares blend into snowy landscapes,CAMOUFLAGE,2
+biology,This rigid cellulose layer surrounds plant cells for structural support,CELL WALL,2
+biology,Carrying water upward from roots to leaves is this vascular plant tissue,XYLEM,1
+biology,This semi permeable lipid bilayer controls what enters living cells,CELL MEMBRANE,3
+film,Directed by Francis Ford Coppola this 1972 mafia drama stars Marlon Brando,THE GODFATHER,3
+film,Starring Tom Hanks this 1994 drama features a man running across America,FORREST GUMP,3
+film,Set inside layered dreams this 2010 thriller stars Leonardo DiCaprio,INCEPTION,2
+film,This 1977 George Lucas space opera introduced Darth Vader and Princess Leia,STAR WARS,2
+film,Can you guess the 1993 Spielberg film featuring cloned T Rex dinosaurs,JURASSIC PARK,3
+film,Starring Keanu Reeves this 1999 sci fi action film bends virtual reality,THE MATRIX,2
+film,Directed by Bong Joon ho this Korean thriller won Best Picture in 2020,PARASITE,2
+film,Starring Humphrey Bogart this 1942 romance is set in wartime Morocco,CASABLANCA,2
+film,This 1975 thriller directed by Steven Spielberg features a great white shark,JAWS,1
+film,Directed by Hayao Miyazaki this 2001 anime features a girl in a bathhouse,SPIRITED AWAY,3
+arts,Woven from fine silk threads these traditional Vietnamese dresses flow gracefully,AO DAI,1
+arts,Performed with rhythmic footwork and guitar music this Spanish dance is fiery,FLAMENCO,2
+arts,This Japanese art folds square paper into intricate animals without glue,ORIGAMI,2
+arts,Using melted beeswax mixed with pigments creates luminous ancient paintings,ENCAUSTIC,2
+arts,Can you guess the Japanese art of growing miniature trees in shallow trays,BONSAI,1
+arts,Carving designs into linoleum blocks for printmaking is called this craft,LINOCUT,2
+arts,Using colored glass pieces held by lead strips creates glowing church windows,STAINED GLASS,3
+arts,This classical female singing voice is the highest vocal range in opera,SOPRANO,2
+arts,Performed on pointe shoes this graceful classical dance tells stories on stage,BALLET,1
+arts,This Indonesian art uses hot wax and dyes to create patterned cotton cloth,BATIK,1
+entertainment,Played on sixty four squares this classic strategy game ends in checkmate,CHESS,1
+entertainment,Created in Russia this falling block puzzle game clears horizontal lines,TETRIS,1
+entertainment,Rolling dice to buy Atlantic City properties defines this board game,MONOPOLY,2
+entertainment,This daily word puzzle gives six tries to guess a five letter word,WORDLE,1
+entertainment,Can you guess the video game where players build worlds from blocks,MINECRAFT,2
+entertainment,Collecting resource cards to build settlements defines this island game,CATAN,1
+entertainment,This party game challenges players to draw clues while teammates guess,PICTIONARY,2
+entertainment,Played with wooden letter tiles this crossword board game scores points,SCRABBLE,2
+entertainment,This classic arcade maze game features a yellow circle eating dots,PAC MAN,2
+entertainment,Created by Nintendo this adventure series stars Link saving Hyrule,LEGEND OF ZELDA,3
+general,Divided into sixty seconds this time unit equals one sixtieth of an hour,MINUTE,1
+general,Measured in knots this nautical unit tracks vessel speed across oceans,KNOT,1
+general,This ancient counting frame slides wooden beads along parallel metal rods,ABACUS,1
+general,Occurring when the Moon completely covers the Sun this event darkens noon,SOLAR ECLIPSE,3
+general,Can you guess the green gemstone prized in ancient Egypt and Colombia,EMERALD,2
+general,Symbolized by a white dove holding an olive branch this state means no war,PEACE,1
+general,This international radio code word represents the letter A in aviation,ALPHA,1
+general,Measured in karats this unit indicates the purity of solid gold jewelry,KARAT,1
+general,This standard system of raised dots lets blind readers read by touch,BRAILLE,2
+general,Occurring once every four years this calendar year has three sixty six days,LEAP YEAR,2

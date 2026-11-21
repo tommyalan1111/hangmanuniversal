@@ -12,12 +12,11 @@ Firebase Hosting. Site tĩnh: không framework, không build step, không backen
 
 ```
 firebase-site/
-├── firebase.json              # hosting: public/, cleanUrls, cache headers
+├── firebase.json              # hosting: public/, cleanUrls, redirects, cache headers
 ├── .firebaserc                # project mặc định
 ├── public/
 │   ├── index.html             # trang giới thiệu (hero, 3 feature card, quote, footer)
 │   ├── site.css               # toàn bộ giao diện
-│   ├── privacy.html           # chính sách riêng tư (clean URL: /privacy/)
 │   ├── 404.html
 │   ├── favicon.svg
 │   ├── icon.png               # icon app 512px
@@ -40,8 +39,8 @@ cd firebase-site
 node tools/serve.mjs            # http://127.0.0.1:4173
 ```
 
-`serve.mjs` mô phỏng đường dẫn của Firebase Hosting: `/privacy` → `privacy.html`,
-`/privacy/` cũng chạy, và trả `404.html` cho đường dẫn sai.
+`serve.mjs` mô phỏng đường dẫn của Firebase Hosting: `index.html` cho `/`,
+`/trang` → `trang.html`, và trả `404.html` cho đường dẫn sai.
 
 Chụp ảnh + kiểm tra tự động (cần Chrome):
 
@@ -50,7 +49,7 @@ node tools/preview.mjs          # ảnh trong .shots/
 ```
 
 Script kiểm tra ảnh hỏng, tràn ngang, lỗi console và in kích thước trang ở
-desktop 1440px + mobile 390px, kèm ảnh trang privacy.
+desktop 1440px + mobile 390px.
 
 ## Cập nhật ảnh / icon
 
@@ -86,8 +85,8 @@ https://play.google.com/store/apps/details?id=com.hangmanuniversal.game
 ```
 
 App chưa publish thì Play Store trả 404. Khi app lên store, link tự hoạt động.
-Nếu muốn đổi thành “Coming soon” (không link) hoặc domain/store khác, sửa 2 chỗ:
-`index.html` (hero + footer) và `privacy.html` (footer).
+Nếu muốn đổi thành “Coming soon” (không link) hoặc domain/store khác, sửa 2 chỗ
+trong `index.html` (hero + footer).
 
 ## Deploy
 
@@ -106,11 +105,18 @@ curl.exe -I https://hangman-universal-site.web.app/
 curl.exe -I https://hangman-universal-site.web.app/privacy/
 ```
 
+`/privacy` và `/privacy/` được redirect 301 sang Google Sites (xem
+`firebase.json`), nên link cũ vẫn dùng được.
+
 ## Ghi chú
 
+- **Chính sách riêng tư nằm ở Google Sites:**
+  https://sites.google.com/view/hangmanuniversal-privacypolicy/home
+  Các link Privacy trên trang đều trỏ thẳng tới đây; `/privacy` và `/privacy/`
+  được redirect 301 sang cùng địa chỉ.
 - **Không có analytics, cookie hay quảng cáo trên website.** App Android dùng
-  AdMob + Play Billing; `/privacy/` mô tả cả hai. Nếu thêm analytics/ads vào
-  web, phải cập nhật trang privacy trước.
+  AdMob + Play Billing; chính sách riêng tư (Google Sites) mô tả cả hai. Nếu
+  thêm analytics/ads vào web, phải cập nhật policy trước.
 - `app-ads.txt` ở root dùng publisher ID `pub-1345063149639557` (cùng tài khoản
   AdMob với app). Khi đặt “website” cho app trong Play Console, dùng domain này
   để Google xác minh.
@@ -122,4 +128,5 @@ curl.exe -I https://hangman-universal-site.web.app/privacy/
 
 ## Lịch sử
 
-- 21/11/2026 — tạo Firebase project, trang giới thiệu, privacy, deploy hosting.
+- 21/11/2026 — tạo Firebase project, trang giới thiệu, deploy hosting; đổi
+  policy sang Google Sites và thêm redirect `/privacy`.

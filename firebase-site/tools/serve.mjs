@@ -1,7 +1,7 @@
 /*
  * Tiny static server for local checks of firebase-site/public.
- * Mimics the Firebase Hosting behaviour we rely on: /privacy and /privacy/
- * both serve privacy.html, and 404.html is returned for misses.
+ * Mimics the Firebase Hosting behaviour we rely on: clean URLs, index files
+ * for directories, and 404.html for misses.
  */
 import http from "node:http";
 import fs from "node:fs/promises";

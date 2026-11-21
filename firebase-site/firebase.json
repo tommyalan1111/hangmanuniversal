@@ -8,6 +8,18 @@
     ],
     "cleanUrls": true,
     "trailingSlash": true,
+    "redirects": [
+      {
+        "source": "/privacy",
+        "destination": "https://sites.google.com/view/hangmanuniversal-privacypolicy/home",
+        "type": 301
+      },
+      {
+        "source": "/privacy/",
+        "destination": "https://sites.google.com/view/hangmanuniversal-privacypolicy/home",
+        "type": 301
+      }
+    ],
     "headers": [
       {
         "source": "**/*.@(jpg|jpeg|png|webp|svg|woff2)",

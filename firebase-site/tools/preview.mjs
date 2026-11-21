@@ -173,9 +173,8 @@ async function main() {
 
     const desktop = await shoot(cdp, "site-desktop.png", 1440, 950, false);
     const mobile = await shoot(cdp, "site-mobile.png", 390, 844, true);
-    const privacy = await shoot(cdp, "site-privacy.png", 1440, 950, false, "/privacy/");
 
-    console.log(JSON.stringify({ desktop, mobile, privacy, consoleErrors: cdp.errors }, null, 2));
+    console.log(JSON.stringify({ desktop, mobile, consoleErrors: cdp.errors }, null, 2));
     ws.close();
   } finally {
     chrome.kill();

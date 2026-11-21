@@ -1,0 +1,11 @@
+{
+  "name": "hangman-universal-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Introduction site for Hangman Universal, hosted on Firebase.",
+  "scripts": {
+    "serve": "node tools/serve.mjs",
+    "preview": "node tools/preview.mjs",
+    "deploy": "firebase deploy --only hosting"
+  }
+}

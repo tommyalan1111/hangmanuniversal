@@ -1,0 +1,2 @@
+# Hangman Universal — app-ads.txt
+google.com, pub-1345063149639557, DIRECT, f08c47fec0942fa0

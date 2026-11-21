@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — Hangman Universal</title>
+<meta name="description" content="How Hangman Universal handles data: no accounts, progress stored on your device, and how Firebase Hosting and AdMob fit in.">
+<meta name="theme-color" content="#060a13">
+<link rel="canonical" href="https://hangman-universal-site.web.app/privacy/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="glow glow-a" aria-hidden="true"></div>
+<div class="glow glow-b" aria-hidden="true"></div>
+
+<header class="nav wrap">
+  <a class="brand" href="/" aria-label="Hangman Universal home">
+    <img src="/icon.png" alt="" width="46" height="46">
+    <span class="brand-text">
+      <small>Word game</small>
+      <strong>Hangman</strong>
+    </span>
+  </a>
+  <nav aria-label="Main">
+    <a href="/#features">Features</a>
+    <a href="/#support">Support</a>
+    <a class="pill" href="/privacy/">Privacy</a>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <p class="crumb"><a href="/">Home</a> / Privacy</p>
+      <h1>Privacy</h1>
+      <p>The short version: no account, no email, no tracking pixels. Your game progress stays on your device.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+  <article class="prose">
+    <p class="updated">Last updated · 21 November 2026</p>
+
+    <p>Hangman Universal is a word game for Android. This page covers the website at <strong>hangman-universal-site.web.app</strong> and the Android app with package name <strong>com.hangmanuniversal.game</strong>.</p>
+
+    <h2>The website</h2>
+    <p>This site is a static introduction to the game. It has no accounts, no forms, no cookies, no analytics and no advertising. It does not host the game and does not store game progress.</p>
+    <p>The pages are delivered by <strong>Firebase Hosting</strong> (Google). Google processes standard request information — such as IP address, user agent, requested URL and timestamp — to serve the site, keep it secure and prevent abuse. That processing is covered by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.</p>
+
+    <h2>The Android app</h2>
+    <p>The game keeps your level, coins, win streak, solved clues and sound setting in local storage on your device. This data is not sent to us. Uninstalling the app removes it; there is no server-side copy to recover.</p>
+    <p>The Android build also uses two Google services:</p>
+    <ul>
+      <li><strong>Google AdMob</strong> — optional banner, interstitial and rewarded ads. The Google Mobile Ads SDK may collect device identifiers, approximate location, ad interactions and diagnostic data to serve and measure ads. You can limit ad personalization in your device's Google settings.</li>
+      <li><strong>Google Play Billing</strong> — used only for the optional one-time “Remove Ads” purchase. Payment details are handled entirely by Google Play; the app never sees your card information.</li>
+    </ul>
+
+    <h2>Third parties</h2>
+    <p>The services above are provided by Google. Their handling of data is described in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google privacy policy</a> and the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google advertising policies</a>. We do not sell data, and we do not share data with any other third party.</p>
+
+    <h2>Children</h2>
+    <p>Hangman Universal is a general-audience word game and is not directed at children under 13. We do not knowingly collect personal information from children. The website collects no personal information from anyone.</p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>Uninstall the Android app to remove its local progress.</li>
+      <li>Use your device's ad settings to reset or limit your advertising ID.</li>
+      <li>Clear your browser's site data to remove anything the website stored — it currently stores nothing.</li>
+    </ul>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the “last updated” date at the top of this page will change too. Material changes will be noted in the project's public repository.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about privacy, or a request to correct something on this page, can go to the public issue tracker: <a href="https://github.com/tommyalan1111/hangmanuniversal/issues" target="_blank" rel="noopener">github.com/tommyalan1111/hangmanuniversal/issues</a>.</p>
+  </article>
+  </div>
+</main>
+
+<footer id="support">
+  <div class="foot wrap">
+    <div class="foot-brand">
+      <img src="/icon.png" alt="" width="38" height="38">
+      <p>
+        Hangman Universal<br>
+        A word game for Android
+      </p>
+    </div>
+
+    <div class="foot-links">
+      <a href="https://github.com/tommyalan1111/hangmanuniversal/issues" target="_blank" rel="noopener">Support &amp; clue fixes</a>
+      <a href="/">Home</a>
+      <a href="https://play.google.com/store/apps/details?id=com.hangmanuniversal.game" target="_blank" rel="noopener">Google Play</a>
+    </div>
+
+    <p class="legal">
+      © 2026 Hangman Universal. An independent word game, not affiliated with any
+      film, TV, music or publishing company. Titles and names belong to their
+      respective owners.
+    </p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hangman-universal-site.web.app/sitemap.xml
